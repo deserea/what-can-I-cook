@@ -1,403 +1,523 @@
-protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true,
-    "instructions": [
-      "Cook the chicken with onion and garlic until fully done.",
-      "Season with cumin and paprika if you have them.",
-      "Warm the tortillas.",
-      "Fill tortillas with chicken mixture and top with any extras like cheddar, avocado, cilantro, or lime."
-    ]
-  },
-  {
-    "name": "Beef Tacos",
-    "required": ["beef", "tortilla", "onion", "garlic"],
-    "optional": ["lime", "cumin", "paprika", "cheddar", "avocado", "cilantro"],
-    "cuisine": "Mexican",
-    "meal_type": "Dinner",
-    "protein": "Beef",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true,
-    "instructions": [
-      "Brown the beef with onion and garlic.",
-      "Add cumin and paprika if available and cook for another minute.",
-      "Warm the tortillas.",
-      "Assemble tacos and finish with any toppings you have."
-    ]
-  },
-  {
-    "name": "Chicken Quesadilla",
-    "required": ["chicken", "tortilla", "cheddar"],
-    "optional": ["onion", "bell pepper", "sour cream", "avocado"],
-    "cuisine": "Mexican",
-    "meal_type": "Lunch",
-    "protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true,
-    "instructions": [
-      "Cook the chicken and any optional vegetables.",
-      "Place tortilla in a skillet and add cheddar plus the chicken mixture.",
-      "Fold and cook on both sides until golden and melty.",
-      "Serve with sour cream or avocado if you have them."
-    ]
-  },
-  {
-    "name": "Pasta with Garlic and Olive Oil",
-    "required": ["pasta", "garlic", "olive oil"],
-    "optional": ["red pepper flakes", "parmesan", "lemon", "parsley"],
-    "cuisine": "Italian",
-    "meal_type": "Dinner",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false,
-    "instructions": [
-      "Cook the pasta until al dente.",
-      "Gently sauté garlic in olive oil.",
-      "Toss the pasta with the garlic oil.",
-      "Finish with red pepper flakes, parmesan, lemon, or parsley if available."
-    ]
-  },
-  {
-    "name": "Sausage Tomato Pasta",
-    "required": ["sausage", "pasta", "tomato", "onion", "garlic"],
-    "optional": ["olive oil", "parmesan", "basil", "red pepper flakes"],
-    "cuisine": "Italian",
-    "meal_type": "Dinner",
-    "protein": "Sausage",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true,
-    "instructions": [
-      "Cook the sausage and break it up in a pan.",
-      "Add onion and garlic and cook until softened.",
-      "Add tomato and simmer into a quick sauce.",
-      "Toss with cooked pasta and finish with parmesan or basil if you have them."
-    ]
-  },
-  {
-    "name": "Mushroom Pasta",
-    "required": ["pasta", "mushroom", "garlic"],
-    "optional": ["butter", "parmesan", "thyme"],
-    "cuisine": "Italian",
-    "meal_type": "Dinner",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false,
-    "instructions": [
-      "Cook the pasta.",
-      "Sauté mushrooms and garlic in butter or oil until browned.",
-      "Toss with pasta.",
-      "Finish with parmesan and thyme if available."
-    ]
-  },
-  {
-    "name": "Greek Salad",
-    "required": ["cucumber", "tomato", "feta"],
-    "optional": ["red onion", "olive oil", "vinegar", "olive"],
-    "cuisine": "Greek",
-    "meal_type": "Lunch",
-    "protein": "Cheese",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false,
-    "instructions": [
-      "Chop cucumber and tomato.",
-      "Add feta and red onion if using.",
-      "Dress with olive oil and vinegar.",
-      "Top with olives if available."
-    ]
-  },
-  {
-    "name": "Chicken Curry",
-    "required": ["chicken", "onion", "garlic"],
-    "optional": ["ginger", "tomato", "rice", "cumin", "turmeric", "coriander"],
-    "cuisine": "Indian",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true,
-    "instructions": [
-      "Cook onion and garlic until soft.",
-      "Add chicken and brown lightly.",
-      "Add spices and tomato if you have them and simmer until the chicken is cooked through.",
-      "Serve over rice if available."
-    ]
-  },
-  {
-    "name": "Chana Masala Style",
-    "required": ["chickpea", "tomato", "onion"],
-    "optional": ["garlic", "ginger", "cumin", "coriander", "turmeric", "rice"],
-    "cuisine": "Indian",
-    "meal_type": "Dinner",
-    "protein": "Chickpeas",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false,
-    "instructions": [
-      "Cook onion until softened.",
-      "Add tomato and spices if available.",
-      "Stir in chickpeas and simmer until flavorful.",
-      "Serve with rice if you have it."
-    ]
-  },
-  {
-    "name": "Chicken Stir-Fry",
-    "required": ["chicken", "bell pepper", "onion", "soy sauce"],
-    "optional": ["garlic", "ginger", "rice", "broccoli", "sesame oil"],
-    "cuisine": "Chinese",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true,
-    "instructions": [
-      "Cook the chicken in a hot pan.",
-      "Add onion and bell pepper and stir-fry until crisp tender.",
-      "Add soy sauce plus garlic or ginger if available.",
-      "Serve with rice or top with sesame oil if you have it."
-    ]
-  },
-  {
-    "name": "Vegetable Fried Rice",
-    "required": ["rice", "egg", "soy sauce"],
-    "optional": ["carrot", "green onion", "peas", "oil"],
-    "cuisine": "Chinese",
-    "meal_type": "Dinner",
-    "protein": "Egg",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false,
-    "instructions": [
-      "Scramble the egg in a hot pan and remove.",
-      "Cook vegetables in a little oil if using.",
-      "Add rice and soy sauce and stir-fry.",
-      "Return the egg to the pan and finish with green onion if available."
-    ]
-  },
-  {
-    "name": "Thai Basil Chicken Style",
-    "required": ["chicken", "garlic", "soy sauce"],
-    "optional": ["basil", "rice", "chili flakes", "bell pepper"],
-    "cuisine": "Thai",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true,
-    "instructions": [
-      "Cook chicken with garlic in a hot pan.",
-      "Add soy sauce and chili flakes if you like heat.",
-      "Stir in basil and bell pepper if available.",
-      "Serve over rice."
-    ]
-  },
-  {
-    "name": "Teriyaki Salmon Bowl Style",
-    "required": ["salmon", "rice", "soy sauce"],
-    "optional": ["green onion", "avocado", "cucumber", "sesame seeds"],
-    "cuisine": "Japanese",
-    "meal_type": "Dinner",
-    "protein": "Salmon",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true,
-    "instructions": [
-      "Cook the salmon until just done.",
-      "Season or glaze lightly with soy sauce.",
-      "Serve over rice.",
-      "Top with cucumber, avocado, green onion, or sesame seeds if available."
-    ]
-  },
-  {
-    "name": "Bibimbap Style Bowl",
-    "required": ["rice", "egg"],
-    "optional": ["beef", "carrot", "spinach", "cucumber", "soy sauce", "green onion"],
-    "cuisine": "Korean",
-    "meal_type": "Dinner",
-    "protein": "Egg",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false,
-    "instructions": [
-      "Cook the rice and prepare the egg.",
-      "Cook any vegetables or beef you have separately.",
-      "Layer everything in a bowl over the rice.",
-      "Finish with soy sauce and green onion if available."
-    ]
-  },
-  {
-    "name": "Chicken Adobo Style",
-    "required": ["chicken", "soy sauce", "vinegar"],
-    "optional": ["garlic", "rice", "black pepper", "bay leaf"],
-    "cuisine": "Filipino",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true,
-    "instructions": [
-      "Combine chicken with soy sauce and vinegar in a pan.",
-      "Add garlic, black pepper, and bay leaf if you have them.",
-      "Simmer until the chicken is cooked and the sauce reduces.",
-      "Serve with rice."
-    ]
-  },
-  {
-    "name": "Chicken Shawarma Bowl Style",
-    "required": ["chicken", "rice"],
-    "optional": ["cucumber", "tomato", "garlic", "yogurt", "cumin", "paprika"],
-    "cuisine": "Middle Eastern",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true,
-    "instructions": [
-      "Cook chicken with garlic and warm spices if you have them.",
-      "Serve over rice.",
-      "Add cucumber and tomato for freshness.",
-      "Finish with yogurt sauce if available."
-    ]
-  },
-  {
-    "name": "Paella Style Rice",
-    "required": ["rice", "tomato", "onion"],
-    "optional": ["shrimp", "chicken", "bell pepper", "peas", "paprika", "lemon"],
-    "cuisine": "Spanish",
-    "meal_type": "Dinner",
-    "protein": "Mixed",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": false,
-    "instructions": [
-      "Cook onion and tomato in a wide pan.",
-      "Add rice and stir with paprika if available.",
-      "Add protein and vegetables if using and cook until the rice is tender.",
-      "Finish with lemon."
-    ]
-  },
-  {
-    "name": "Caldo Verde Style",
-    "required": ["potato", "broth", "greens"],
-    "optional": ["sausage", "garlic", "olive oil", "onion"],
-    "cuisine": "Portuguese",
-    "meal_type": "Dinner",
-    "protein": "Sausage",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": false,
-    "instructions": [
-      "Cook potato in broth until soft.",
-      "Mash or blend part of it for body.",
-      "Add greens and sausage if using.",
-      "Finish with garlic, onion, or olive oil if available."
-    ]
-  },
-  {
-    "name": "Coq au Vin Style",
-    "required": ["chicken", "onion", "mushroom"],
-    "optional": ["garlic", "carrot", "thyme", "butter"],
-    "cuisine": "French",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true,
-    "instructions": [
-      "Brown the chicken.",
-      "Cook onion and mushroom until softened.",
-      "Add garlic, carrot, and thyme if you have them and simmer together.",
-      "Finish with butter for richness if available."
-    ]
-  },
-  {
-    "name": "Jerk Chicken Style",
-    "required": ["chicken", "garlic"],
-    "optional": ["lime", "thyme", "rice", "beans", "chili flakes"],
-    "cuisine": "Caribbean",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true,
-    "instructions": [
-      "Season chicken with garlic and any spicy or herby extras you have.",
-      "Cook until browned and done.",
-      "Serve with rice and beans if available.",
-      "Finish with lime."
-    ]
-  },
-  {
-    "name": "Tagine Style Chickpeas",
-    "required": ["chickpea", "tomato", "onion"],
-    "optional": ["cinnamon", "cumin", "carrot", "lemon"],
-    "cuisine": "Moroccan",
-    "meal_type": "Dinner",
-    "protein": "Chickpeas",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false,
-    "instructions": [
-      "Cook onion until softened.",
-      "Add tomato and spices if available.",
-      "Stir in chickpeas and carrot if using and simmer.",
-      "Finish with lemon."
-    ]
-  },
-  {
-    "name": "Berbere Lentils Style",
-    "required": ["lentil", "onion", "garlic"],
-    "optional": ["tomato", "ginger", "paprika", "rice"],
-    "cuisine": "Ethiopian",
-    "meal_type": "Dinner",
-    "protein": "Lentils",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false,
-    "instructions": [
-      "Cook onion and garlic first.",
-      "Add lentils and enough liquid to simmer.",
-      "Add tomato, ginger, and paprika if available.",
-      "Cook until tender and serve with rice if desired."
-    ]
-  },
-  {
-    "name": "Red Beans and Rice Style",
-    "required": ["kidney bean", "rice", "onion"],
-    "optional": ["sausage", "garlic", "bell pepper", "paprika"],
-    "cuisine": "Cajun/Creole",
-    "meal_type": "Dinner",
-    "protein": "Beans",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false,
-    "instructions": [
-      "Cook onion first.",
-      "Add beans and seasoning ingredients if you have them.",
-      "Simmer until flavorful.",
-      "Serve over rice and add sausage if available."
-    ]
-  },
-  {
-    "name": "Three Sisters Bowl Style",
-    "required": ["corn", "bean", "squash"],
-    "optional": ["onion", "sage", "broth"],
-    "cuisine": "Indigenous",
-    "meal_type": "Dinner",
-    "protein": "Beans",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false,
-    "instructions": [
-      "Cook squash until tender.",
-      "Add corn and beans and warm through.",
-      "Add onion, sage, and broth if available for more flavor.",
-      "Serve as a hearty bowl."
-    ]
-  }
-]
+{
+  "recipes": [
+    {
+      "id": "chicken_tacos",
+      "name": "Chicken Tacos",
+      "required": [
+        "chicken",
+        { "name": "wrap", "options": ["corn tortilla", "flour tortilla", "lettuce wrap"] },
+        "onion",
+        "garlic"
+      ],
+      "optional": [
+        "lime",
+        "cumin",
+        "paprika",
+        "avocado",
+        "cilantro",
+        { "name": "mexican cheese", "options": ["cheddar", "monterey jack", "cotija", "queso fresco", "pepper jack", "colby jack"] }
+      ],
+      "cuisine": "Mexican",
+      "meal_type": "Dinner",
+      "protein": "Chicken",
+      "skill_level": "Beginner",
+      "time_minutes": 25,
+      "servings": 2,
+      "quick_meal": true,
+      "vegetarian": false,
+      "high_protein": true,
+      "questions": [
+        "Do you have corn tortillas, flour tortillas, or lettuce for wraps?",
+        "Do you have any taco-friendly cheese?",
+        "Do you want toppings like lime, avocado, or cilantro?"
+      ],
+      "shopping_tips": [
+        "A lime and cilantro brighten this quickly.",
+        "Any taco cheese blend works well.",
+        "A jar of salsa is an easy shortcut."
+      ],
+      "chef_upgrade": [
+        "Sear the chicken harder for deeper browning.",
+        "Warm tortillas in a dry skillet instead of the microwave.",
+        "Finish with lime and a pinch of flaky salt."
+      ],
+      "instructions": [
+        "Cook the chicken with onion and garlic until fully done.",
+        "Season with cumin and paprika if you have them.",
+        "Warm tortillas or prepare lettuce wraps.",
+        "Fill and top with cheese, avocado, cilantro, or lime if available."
+      ]
+    },
+    {
+      "id": "beef_tacos",
+      "name": "Beef Tacos",
+      "required": [
+        "beef",
+        { "name": "wrap", "options": ["corn tortilla", "flour tortilla", "lettuce wrap"] },
+        "onion",
+        "garlic"
+      ],
+      "optional": [
+        "lime",
+        "cumin",
+        "paprika",
+        "avocado",
+        "cilantro",
+        { "name": "mexican cheese", "options": ["cheddar", "monterey jack", "cotija", "queso fresco", "pepper jack", "colby jack"] }
+      ],
+      "cuisine": "Mexican",
+      "meal_type": "Dinner",
+      "protein": "Beef",
+      "skill_level": "Beginner",
+      "time_minutes": 25,
+      "servings": 2,
+      "quick_meal": true,
+      "vegetarian": false,
+      "high_protein": true,
+      "questions": [
+        "Do you have tortillas or lettuce wraps?",
+        "Do you want cheese on top?",
+        "Do you have lime or hot sauce for finishing?"
+      ],
+      "shopping_tips": [
+        "Cumin and paprika help a lot.",
+        "Bagged shredded lettuce is an easy topping.",
+        "Sour cream works well too."
+      ],
+      "chef_upgrade": [
+        "Brown the beef deeply before stirring.",
+        "Let the onion soften well before finishing.",
+        "Toast tortillas in a skillet."
+      ],
+      "instructions": [
+        "Brown the beef with onion and garlic.",
+        "Add cumin and paprika if available and cook for another minute.",
+        "Warm tortillas or prepare lettuce wraps.",
+        "Assemble and add toppings you have."
+      ]
+    },
+    {
+      "id": "chicken_quesadilla",
+      "name": "Chicken Quesadilla",
+      "required": [
+        "chicken",
+        { "name": "wrap", "options": ["corn tortilla", "flour tortilla"] },
+        { "name": "melting cheese", "options": ["cheddar", "monterey jack", "mozzarella", "pepper jack", "colby jack", "american cheese"] }
+      ],
+      "optional": [
+        "onion",
+        "bell pepper",
+        "sour cream",
+        "avocado"
+      ],
+      "cuisine": "Mexican",
+      "meal_type": "Lunch",
+      "protein": "Chicken",
+      "skill_level": "Beginner",
+      "time_minutes": 20,
+      "servings": 2,
+      "quick_meal": true,
+      "vegetarian": false,
+      "high_protein": true,
+      "questions": [
+        "Do you have a melty cheese on hand?",
+        "Would you add onion or peppers?",
+        "Do you want sour cream or avocado on the side?"
+      ],
+      "shopping_tips": [
+        "A melty cheese is the key piece.",
+        "Bell pepper adds sweetness.",
+        "Salsa makes it feel more complete."
+      ],
+      "chef_upgrade": [
+        "Toast the tortilla in butter for better color.",
+        "Cook the filling separately so the tortilla stays crisp.",
+        "Rest for a minute before slicing."
+      ],
+      "instructions": [
+        "Cook the chicken and any vegetables.",
+        "Place a tortilla in a skillet and add cheese plus chicken mixture.",
+        "Fold and cook until golden and melty.",
+        "Serve with sour cream or avocado if available."
+      ]
+    },
+    {
+      "id": "pasta_garlic_olive_oil",
+      "name": "Pasta with Garlic and Olive Oil",
+      "required": ["pasta", "garlic", "olive oil"],
+      "optional": [
+        "red pepper flakes",
+        { "name": "italian cheese", "options": ["parmesan", "pecorino", "asiago", "romano", "mozzarella"] },
+        "lemon",
+        "parsley"
+      ],
+      "cuisine": "Italian",
+      "meal_type": "Dinner",
+      "protein": "None",
+      "skill_level": "Beginner",
+      "time_minutes": 20,
+      "servings": 2,
+      "quick_meal": true,
+      "vegetarian": true,
+      "high_protein": false,
+      "questions": [
+        "Do you have any pasta shape at all?",
+        "Do you have parmesan or another cheese?",
+        "Would you like some heat from chili flakes?"
+      ],
+      "shopping_tips": [
+        "Parmesan helps a lot.",
+        "A lemon adds freshness.",
+        "Parsley is optional but nice."
+      ],
+      "chef_upgrade": [
+        "Cook garlic gently so it does not burn.",
+        "Use a splash of pasta water to emulsify.",
+        "Finish with lemon zest if available."
+      ],
+      "instructions": [
+        "Cook pasta until al dente.",
+        "Gently sauté garlic in olive oil.",
+        "Toss pasta with the garlic oil and a little pasta water if needed.",
+        "Finish with chili flakes, cheese, lemon, or parsley if available."
+      ]
+    },
+    {
+      "id": "sausage_tomato_pasta",
+      "name": "Sausage Tomato Pasta",
+      "required": ["sausage", "pasta", "tomato", "onion", "garlic"],
+      "optional": [
+        "olive oil",
+        { "name": "italian cheese", "options": ["parmesan", "pecorino", "asiago", "romano", "mozzarella"] },
+        "basil",
+        "red pepper flakes"
+      ],
+      "cuisine": "Italian",
+      "meal_type": "Dinner",
+      "protein": "Sausage",
+      "skill_level": "Intermediate",
+      "time_minutes": 40,
+      "servings": 4,
+      "quick_meal": false,
+      "vegetarian": false,
+      "high_protein": true,
+      "questions": [
+        "Do you have fresh tomato or canned tomato?",
+        "Do you have an Italian-style cheese?",
+        "Would you like basil or chili flakes?"
+      ],
+      "shopping_tips": [
+        "Crushed or canned tomatoes also work.",
+        "Italian sausage is easiest.",
+        "A wedge of parmesan lasts a long time."
+      ],
+      "chef_upgrade": [
+        "Brown the sausage until you build fond.",
+        "Reduce the sauce slightly before adding pasta.",
+        "Add basil at the end."
+      ],
+      "instructions": [
+        "Cook sausage and break it up in a pan.",
+        "Add onion and garlic and cook until softened.",
+        "Add tomato and simmer into a quick sauce.",
+        "Toss with cooked pasta and finish with cheese or basil if you have them."
+      ]
+    },
+    {
+      "id": "mushroom_pasta",
+      "name": "Mushroom Pasta",
+      "required": ["pasta", "mushroom", "garlic"],
+      "optional": [
+        "butter",
+        { "name": "italian cheese", "options": ["parmesan", "pecorino", "asiago", "romano", "mozzarella"] },
+        "thyme"
+      ],
+      "cuisine": "Italian",
+      "meal_type": "Dinner",
+      "protein": "None",
+      "skill_level": "Beginner",
+      "time_minutes": 25,
+      "servings": 2,
+      "quick_meal": true,
+      "vegetarian": true,
+      "high_protein": false,
+      "questions": [
+        "Do you have butter or just oil?",
+        "Do you have a cheese to finish it?",
+        "Would you like thyme or parsley?"
+      ],
+      "shopping_tips": [
+        "Cremini mushrooms work great.",
+        "Parmesan adds savoriness.",
+        "A little butter helps the sauce."
+      ],
+      "chef_upgrade": [
+        "Let mushrooms brown instead of steaming.",
+        "Salt mushrooms after they start to color.",
+        "Use a little pasta water for silkier texture."
+      ],
+      "instructions": [
+        "Cook the pasta.",
+        "Sauté mushrooms and garlic in butter or oil until browned.",
+        "Toss with pasta.",
+        "Finish with cheese and thyme if available."
+      ]
+    },
+    {
+      "id": "greek_salad",
+      "name": "Greek Salad",
+      "required": [
+        "cucumber",
+        "tomato",
+        { "name": "greek cheese", "options": ["feta"] }
+      ],
+      "optional": ["red onion", "olive oil", "vinegar", "olive"],
+      "cuisine": "Greek",
+      "meal_type": "Lunch",
+      "protein": "Cheese",
+      "skill_level": "Beginner",
+      "time_minutes": 15,
+      "servings": 2,
+      "quick_meal": true,
+      "vegetarian": true,
+      "high_protein": false,
+      "questions": [
+        "Do you have feta?",
+        "Do you have olives or red onion?",
+        "Would you like a simple oil and vinegar dressing?"
+      ],
+      "shopping_tips": [
+        "Feta is the key ingredient.",
+        "English cucumber works especially well.",
+        "Red onion adds bite."
+      ],
+      "chef_upgrade": [
+        "Salt tomatoes lightly before mixing.",
+        "Use good olive oil if you have one.",
+        "Add oregano if available."
+      ],
+      "instructions": [
+        "Chop cucumber and tomato.",
+        "Add feta and red onion if using.",
+        "Dress with olive oil and vinegar.",
+        "Top with olives if available."
+      ]
+    },
+    {
+      "id": "chicken_curry",
+      "name": "Chicken Curry",
+      "required": ["chicken", "onion", "garlic"],
+      "optional": ["ginger", "tomato", "rice", "cumin", "turmeric", "coriander"],
+      "cuisine": "Indian",
+      "meal_type": "Dinner",
+      "protein": "Chicken",
+      "skill_level": "Intermediate",
+      "time_minutes": 50,
+      "servings": 4,
+      "quick_meal": false,
+      "vegetarian": false,
+      "high_protein": true,
+      "questions": [
+        "Do you have ginger and warm spices?",
+        "Do you want rice with it?",
+        "Do you have tomato or tomato paste?"
+      ],
+      "shopping_tips": [
+        "A small spice blend goes a long way.",
+        "Rice is the easiest pairing.",
+        "Canned tomatoes work well."
+      ],
+      "chef_upgrade": [
+        "Cook onions longer for deeper flavor.",
+        "Toast spices briefly before adding liquid.",
+        "Let the curry rest before serving."
+      ],
+      "instructions": [
+        "Cook onion and garlic until soft.",
+        "Add chicken and brown lightly.",
+        "Add spices and tomato if you have them and simmer until chicken is cooked through.",
+        "Serve over rice if available."
+      ]
+    },
+    {
+      "id": "chana_masala_style",
+      "name": "Chana Masala Style",
+      "required": ["chickpea", "tomato", "onion"],
+      "optional": ["garlic", "ginger", "cumin", "coriander", "turmeric", "rice"],
+      "cuisine": "Indian",
+      "meal_type": "Dinner",
+      "protein": "Chickpeas",
+      "skill_level": "Intermediate",
+      "time_minutes": 40,
+      "servings": 4,
+      "quick_meal": false,
+      "vegetarian": true,
+      "high_protein": false,
+      "questions": [
+        "Do you have canned chickpeas or cooked ones?",
+        "Do you want to serve this with rice?",
+        "Do you have garlic and ginger?"
+      ],
+      "shopping_tips": [
+        "Canned chickpeas are easiest.",
+        "Cumin is highly recommended.",
+        "Rice makes it a fuller meal."
+      ],
+      "chef_upgrade": [
+        "Cook onion until deeply soft.",
+        "Mash a few chickpeas into the sauce.",
+        "Finish with cilantro if you have it."
+      ],
+      "instructions": [
+        "Cook onion until softened.",
+        "Add tomato and spices if available.",
+        "Stir in chickpeas and simmer until flavorful.",
+        "Serve with rice if you have it."
+      ]
+    },
+    {
+      "id": "chicken_stir_fry",
+      "name": "Chicken Stir-Fry",
+      "required": ["chicken", "bell pepper", "onion", "soy sauce"],
+      "optional": ["garlic", "ginger", "rice", "broccoli", "sesame oil"],
+      "cuisine": "Chinese",
+      "meal_type": "Dinner",
+      "protein": "Chicken",
+      "skill_level": "Beginner",
+      "time_minutes": 25,
+      "servings": 3,
+      "quick_meal": true,
+      "vegetarian": false,
+      "high_protein": true,
+      "questions": [
+        "Do you have rice to serve with it?",
+        "Do you have garlic or ginger?",
+        "Would you like broccoli or another quick vegetable?"
+      ],
+      "shopping_tips": [
+        "Frozen broccoli is a good backup.",
+        "Sesame oil adds a restaurant-style finish.",
+        "Jasmine rice pairs nicely."
+      ],
+      "chef_upgrade": [
+        "Cook chicken in batches so it browns.",
+        "Add sesame oil at the end.",
+        "Use very high heat for vegetables."
+      ],
+      "instructions": [
+        "Cook the chicken in a hot pan.",
+        "Add onion and bell pepper and stir-fry until crisp tender.",
+        "Add soy sauce plus garlic or ginger if available.",
+        "Serve with rice or finish with sesame oil if you have it."
+      ]
+    },
+    {
+      "id": "vegetable_fried_rice",
+      "name": "Vegetable Fried Rice",
+      "required": ["rice", "egg", "soy sauce"],
+      "optional": ["carrot", "green onion", "peas", "oil"],
+      "cuisine": "Chinese",
+      "meal_type": "Dinner",
+      "protein": "Egg",
+      "skill_level": "Beginner",
+      "time_minutes": 20,
+      "servings": 2,
+      "quick_meal": true,
+      "vegetarian": true,
+      "high_protein": false,
+      "questions": [
+        "Do you have leftover rice?",
+        "Do you have peas, carrots, or green onion?",
+        "Do you want to add another protein?"
+      ],
+      "shopping_tips": [
+        "Day-old rice works best.",
+        "Frozen peas and carrots are perfect here.",
+        "Green onion adds a nice finish."
+      ],
+      "chef_upgrade": [
+        "Use cold rice so it stays separate.",
+        "Cook egg first, then add it back later.",
+        "Let the rice sit briefly in the pan for better texture."
+      ],
+      "instructions": [
+        "Scramble the egg in a hot pan and remove.",
+        "Cook vegetables in a little oil if using.",
+        "Add rice and soy sauce and stir-fry.",
+        "Return the egg to the pan and finish with green onion if available."
+      ]
+    },
+    {
+      "id": "thai_basil_chicken_style",
+      "name": "Thai Basil Chicken Style",
+      "required": ["chicken", "garlic", "soy sauce"],
+      "optional": ["basil", "rice", "chili flakes", "bell pepper"],
+      "cuisine": "Thai",
+      "meal_type": "Dinner",
+      "protein": "Chicken",
+      "skill_level": "Intermediate",
+      "time_minutes": 30,
+      "servings": 3,
+      "quick_meal": true,
+      "vegetarian": false,
+      "high_protein": true,
+      "questions": [
+        "Do you have basil or another fresh herb?",
+        "Do you want to serve it with rice?",
+        "Do you want it spicy?"
+      ],
+      "shopping_tips": [
+        "Fresh basil helps a lot.",
+        "Rice is the easiest base.",
+        "A chili sauce works too."
+      ],
+      "chef_upgrade": [
+        "Cook chicken hard for crispy edges.",
+        "Add basil at the very end.",
+        "Balance with a touch of sugar if needed."
+      ],
+      "instructions": [
+        "Cook chicken with garlic in a hot pan.",
+        "Add soy sauce and chili flakes if you like heat.",
+        "Stir in basil and bell pepper if available.",
+        "Serve over rice."
+      ]
+    },
+    {
+      "id": "teriyaki_salmon_bowl_style",
+      "name": "Teriyaki Salmon Bowl Style",
+      "required": ["salmon", "rice", "soy sauce"],
+      "optional": ["green onion", "avocado", "cucumber", "sesame seeds"],
+      "cuisine": "Japanese",
+      "meal_type": "Dinner",
+      "protein": "Salmon",
+      "skill_level": "Intermediate",
+      "time_minutes": 35,
+      "servings": 2,
+      "quick_meal": false,
+      "vegetarian": false,
+      "high_protein": true,
+      "questions": [
+        "Do you have rice ready or do you need to cook it?",
+        "Would you like toppings like cucumber or avocado?",
+        "Do you want this sweeter or more savory?"
+      ],
+      "shopping_tips": [
+        "Frozen salmon fillets are convenient.",
+        "Cucumber adds freshness.",
+        "Sesame seeds are optional but nice."
+      ],
+      "chef_upgrade": [
+        "Cook salmon just to medium for better texture.",
+        "Reduce the soy glaze slightly.",
+        "Top with green onion right before serving."
+      ],
+      "instructions": [
+        "Cook the salmon until just done.",
+        "Season or glaze lightly with soy sauce.",
+        "Serve over rice.",
+        "Top with cucumber, avocado, green onion, or sesame seeds if available."
+      ]
+    }
+  ]
+}
