@@ -7,3 +7,8 @@
 - Shows which ingredients are missing
 - Builds a shopping list from missing ingredients
 - Allows user to select a recipe and generate a focused shopping list
+## Run as a web app
+
+1. Install Streamlit:
+   ```bash
+   pip install streamlit
