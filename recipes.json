@@ -44,82 +44,28 @@
     "high_protein": false
   },
   {
-    "name": "Breakfast Scramble",
-    "required": ["egg", "cheddar", "butter"],
-    "optional": ["onion", "bell pepper", "spinach", "mushroom"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "Egg",
+    "name": "Chicken Fajitas",
+    "required": ["chicken", "bell pepper", "onion", "tortilla"],
+    "optional": ["lime", "cumin", "paprika", "avocado", "sour cream"],
+    "cuisine": "Mexican",
+    "meal_type": "Dinner",
+    "protein": "Chicken",
     "quick_meal": true,
-    "vegetarian": true,
+    "vegetarian": false,
     "high_protein": true
   },
   {
-    "name": "Veggie Omelet",
-    "required": ["egg", "butter"],
-    "optional": ["onion", "bell pepper", "mushroom", "spinach", "cheddar"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "Egg",
-    "quick_meal": true,
-    "vegetarian": true,
+    "name": "Beef Burrito Bowl",
+    "required": ["beef", "rice", "black bean"],
+    "optional": ["corn", "avocado", "lime", "cheddar", "cilantro"],
+    "cuisine": "Mexican",
+    "meal_type": "Dinner",
+    "protein": "Beef",
+    "quick_meal": false,
+    "vegetarian": false,
     "high_protein": true
   },
-  {
-    "name": "Egg and Cheese Breakfast Wrap",
-    "required": ["egg", "cheddar", "tortilla"],
-    "optional": ["onion", "hot sauce", "avocado"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "Egg",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": true
-  },
-  {
-    "name": "French Toast",
-    "required": ["bread", "egg", "milk"],
-    "optional": ["butter", "cinnamon", "vanilla", "banana", "berry"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "Egg",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Peanut Butter Banana Toast",
-    "required": ["bread", "peanut butter", "banana"],
-    "optional": ["cinnamon", "honey"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "Peanut Butter",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Berry Oatmeal",
-    "required": ["oat", "milk"],
-    "optional": ["blueberry", "strawberry", "banana", "cinnamon", "honey"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Fruit Yogurt Bowl",
-    "required": ["yogurt"],
-    "optional": ["banana", "blueberry", "strawberry", "oat", "honey"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "Yogurt",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
+
   {
     "name": "Pasta with Garlic and Olive Oil",
     "required": ["pasta", "garlic", "olive oil"],
@@ -143,56 +89,23 @@
     "high_protein": true
   },
   {
-    "name": "Italian Sausage Pasta Bake",
-    "required": ["sausage", "pasta", "tomato", "mozzarella"],
-    "optional": ["onion", "garlic", "parmesan", "basil"],
-    "cuisine": "Italian",
-    "meal_type": "Dinner",
-    "protein": "Sausage",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Tomato Pasta",
-    "required": ["pasta", "tomato", "garlic"],
-    "optional": ["onion", "olive oil", "parmesan", "basil"],
-    "cuisine": "Italian",
-    "meal_type": "Dinner",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Creamy Chicken Pasta",
-    "required": ["chicken", "pasta", "parmesan", "butter"],
-    "optional": ["garlic", "spinach", "mushroom", "red pepper flakes"],
-    "cuisine": "Italian",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Spinach Pasta",
-    "required": ["pasta", "spinach", "garlic"],
-    "optional": ["olive oil", "parmesan", "lemon"],
-    "cuisine": "Italian",
-    "meal_type": "Dinner",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
     "name": "Mushroom Pasta",
     "required": ["pasta", "mushroom", "garlic"],
     "optional": ["butter", "parmesan", "thyme"],
     "cuisine": "Italian",
     "meal_type": "Dinner",
     "protein": "None",
+    "quick_meal": true,
+    "vegetarian": true,
+    "high_protein": false
+  },
+  {
+    "name": "Caprese Salad",
+    "required": ["tomato", "mozzarella"],
+    "optional": ["basil", "olive oil", "balsamic"],
+    "cuisine": "Italian",
+    "meal_type": "Lunch",
+    "protein": "Cheese",
     "quick_meal": true,
     "vegetarian": true,
     "high_protein": false
@@ -208,154 +121,12 @@
     "vegetarian": false,
     "high_protein": true
   },
-  {
-    "name": "Caprese Salad",
-    "required": ["tomato", "mozzarella"],
-    "optional": ["basil", "olive oil", "balsamic"],
-    "cuisine": "Italian",
-    "meal_type": "Lunch",
-    "protein": "Cheese",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Beef Stir-Fry",
-    "required": ["beef", "bell pepper", "onion", "soy sauce"],
-    "optional": ["garlic", "ginger", "rice", "sesame oil"],
-    "cuisine": "Asian",
-    "meal_type": "Dinner",
-    "protein": "Beef",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Chicken Stir-Fry",
-    "required": ["chicken", "bell pepper", "onion", "soy sauce"],
-    "optional": ["garlic", "ginger", "rice", "broccoli", "sesame oil"],
-    "cuisine": "Asian",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Vegetable Fried Rice",
-    "required": ["rice", "egg", "soy sauce"],
-    "optional": ["carrot", "green onion", "peas", "oil"],
-    "cuisine": "Asian",
-    "meal_type": "Dinner",
-    "protein": "Egg",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Chicken Fried Rice",
-    "required": ["chicken", "rice", "egg", "soy sauce"],
-    "optional": ["green onion", "carrot", "peas", "oil"],
-    "cuisine": "Asian",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Broccoli Stir-Fry",
-    "required": ["broccoli", "soy sauce", "garlic"],
-    "optional": ["oil", "ginger", "sesame seeds"],
-    "cuisine": "Asian",
-    "meal_type": "Dinner",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Chicken Burrito Bowl",
-    "required": ["chicken", "rice", "black bean"],
-    "optional": ["corn", "avocado", "lime", "cheddar", "cilantro"],
-    "cuisine": "Mexican",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Beef Burrito Bowl",
-    "required": ["beef", "rice", "black bean"],
-    "optional": ["corn", "avocado", "lime", "cheddar", "cilantro"],
-    "cuisine": "Mexican",
-    "meal_type": "Dinner",
-    "protein": "Beef",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Black Bean Tacos",
-    "required": ["black bean", "tortilla"],
-    "optional": ["onion", "lime", "cumin", "avocado", "cheddar"],
-    "cuisine": "Mexican",
-    "meal_type": "Dinner",
-    "protein": "Beans",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Chicken Fajitas",
-    "required": ["chicken", "bell pepper", "onion", "tortilla"],
-    "optional": ["lime", "cumin", "paprika", "avocado", "sour cream"],
-    "cuisine": "Mexican",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Beef Fajitas",
-    "required": ["beef", "bell pepper", "onion", "tortilla"],
-    "optional": ["lime", "cumin", "paprika", "avocado", "sour cream"],
-    "cuisine": "Mexican",
-    "meal_type": "Dinner",
-    "protein": "Beef",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Chicken Caesar Wrap",
-    "required": ["chicken", "tortilla", "romaine"],
-    "optional": ["parmesan", "caesar dressing", "black pepper"],
-    "cuisine": "American",
-    "meal_type": "Lunch",
-    "protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Chicken Salad",
-    "required": ["chicken", "lettuce", "tomato", "cucumber"],
-    "optional": ["olive oil", "vinegar", "avocado", "feta"],
-    "cuisine": "American",
-    "meal_type": "Lunch",
-    "protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
+
   {
     "name": "Greek Salad",
     "required": ["cucumber", "tomato", "feta"],
     "optional": ["red onion", "olive oil", "vinegar", "olive"],
-    "cuisine": "Mediterranean",
+    "cuisine": "Greek",
     "meal_type": "Lunch",
     "protein": "Cheese",
     "quick_meal": true,
@@ -385,10 +156,460 @@
     "high_protein": false
   },
   {
-    "name": "Chicken Noodle Soup",
-    "required": ["chicken", "broth", "carrot", "celery"],
-    "optional": ["onion", "pasta", "parsley", "thyme"],
-    "cuisine": "American",
+    "name": "Hummus Plate",
+    "required": ["chickpea", "olive oil"],
+    "optional": ["lemon", "garlic", "cumin", "cucumber", "bread"],
+    "cuisine": "Middle Eastern",
+    "meal_type": "Lunch",
+    "protein": "Chickpeas",
+    "quick_meal": true,
+    "vegetarian": true,
+    "high_protein": false
+  },
+  {
+    "name": "Shakshuka Style Eggs",
+    "required": ["egg", "tomato", "onion"],
+    "optional": ["bell pepper", "garlic", "cumin", "paprika", "feta"],
+    "cuisine": "Middle Eastern",
+    "meal_type": "Breakfast",
+    "protein": "Egg",
+    "quick_meal": true,
+    "vegetarian": true,
+    "high_protein": true
+  },
+
+  {
+    "name": "Chicken Curry",
+    "required": ["chicken", "onion", "garlic"],
+    "optional": ["ginger", "tomato", "rice", "cumin", "turmeric", "coriander"],
+    "cuisine": "Indian",
     "meal_type": "Dinner",
     "protein": "Chicken",
-    "quick
+    "quick_meal": false,
+    "vegetarian": false,
+    "high_protein": true
+  },
+  {
+    "name": "Chana Masala Style",
+    "required": ["chickpea", "tomato", "onion"],
+    "optional": ["garlic", "ginger", "cumin", "coriander", "turmeric", "rice"],
+    "cuisine": "Indian",
+    "meal_type": "Dinner",
+    "protein": "Chickpeas",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": false
+  },
+  {
+    "name": "Lentil Dal Style",
+    "required": ["lentil", "onion", "garlic"],
+    "optional": ["ginger", "turmeric", "cumin", "rice", "cilantro"],
+    "cuisine": "Indian",
+    "meal_type": "Dinner",
+    "protein": "Lentils",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": false
+  },
+
+  {
+    "name": "Chicken Stir-Fry",
+    "required": ["chicken", "bell pepper", "onion", "soy sauce"],
+    "optional": ["garlic", "ginger", "rice", "broccoli", "sesame oil"],
+    "cuisine": "Chinese",
+    "meal_type": "Dinner",
+    "protein": "Chicken",
+    "quick_meal": true,
+    "vegetarian": false,
+    "high_protein": true
+  },
+  {
+    "name": "Beef Stir-Fry",
+    "required": ["beef", "bell pepper", "onion", "soy sauce"],
+    "optional": ["garlic", "ginger", "rice", "sesame oil"],
+    "cuisine": "Chinese",
+    "meal_type": "Dinner",
+    "protein": "Beef",
+    "quick_meal": true,
+    "vegetarian": false,
+    "high_protein": true
+  },
+  {
+    "name": "Vegetable Fried Rice",
+    "required": ["rice", "egg", "soy sauce"],
+    "optional": ["carrot", "green onion", "peas", "oil"],
+    "cuisine": "Chinese",
+    "meal_type": "Dinner",
+    "protein": "Egg",
+    "quick_meal": true,
+    "vegetarian": true,
+    "high_protein": false
+  },
+  {
+    "name": "Chicken Fried Rice",
+    "required": ["chicken", "rice", "egg", "soy sauce"],
+    "optional": ["green onion", "carrot", "peas", "oil"],
+    "cuisine": "Chinese",
+    "meal_type": "Dinner",
+    "protein": "Chicken",
+    "quick_meal": true,
+    "vegetarian": false,
+    "high_protein": true
+  },
+
+  {
+    "name": "Thai Basil Chicken Style",
+    "required": ["chicken", "garlic", "soy sauce"],
+    "optional": ["basil", "rice", "chili flakes", "bell pepper"],
+    "cuisine": "Thai",
+    "meal_type": "Dinner",
+    "protein": "Chicken",
+    "quick_meal": true,
+    "vegetarian": false,
+    "high_protein": true
+  },
+  {
+    "name": "Thai Coconut Veggie Curry Style",
+    "required": ["onion", "garlic", "broth"],
+    "optional": ["bell pepper", "carrot", "broccoli", "rice", "ginger", "lime"],
+    "cuisine": "Thai",
+    "meal_type": "Dinner",
+    "protein": "None",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": false
+  },
+
+  {
+    "name": "Teriyaki Salmon Bowl Style",
+    "required": ["salmon", "rice", "soy sauce"],
+    "optional": ["green onion", "avocado", "cucumber", "sesame seeds"],
+    "cuisine": "Japanese",
+    "meal_type": "Dinner",
+    "protein": "Salmon",
+    "quick_meal": true,
+    "vegetarian": false,
+    "high_protein": true
+  },
+  {
+    "name": "Miso Soup Style",
+    "required": ["broth"],
+    "optional": ["green onion", "mushroom", "tofu", "seaweed"],
+    "cuisine": "Japanese",
+    "meal_type": "Lunch",
+    "protein": "None",
+    "quick_meal": true,
+    "vegetarian": true,
+    "high_protein": false
+  },
+
+  {
+    "name": "Bibimbap Style Bowl",
+    "required": ["rice", "egg"],
+    "optional": ["beef", "carrot", "spinach", "cucumber", "soy sauce", "green onion"],
+    "cuisine": "Korean",
+    "meal_type": "Dinner",
+    "protein": "Egg",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": false
+  },
+  {
+    "name": "Korean Beef Bowl Style",
+    "required": ["beef", "rice", "soy sauce"],
+    "optional": ["garlic", "green onion", "sesame oil", "cucumber"],
+    "cuisine": "Korean",
+    "meal_type": "Dinner",
+    "protein": "Beef",
+    "quick_meal": true,
+    "vegetarian": false,
+    "high_protein": true
+  },
+
+  {
+    "name": "Chicken Adobo Style",
+    "required": ["chicken", "soy sauce", "vinegar"],
+    "optional": ["garlic", "rice", "black pepper", "bay leaf"],
+    "cuisine": "Filipino",
+    "meal_type": "Dinner",
+    "protein": "Chicken",
+    "quick_meal": false,
+    "vegetarian": false,
+    "high_protein": true
+  },
+  {
+    "name": "Garlic Rice Style",
+    "required": ["rice", "garlic"],
+    "optional": ["oil", "egg", "green onion"],
+    "cuisine": "Filipino",
+    "meal_type": "Breakfast",
+    "protein": "None",
+    "quick_meal": true,
+    "vegetarian": true,
+    "high_protein": false
+  },
+
+  {
+    "name": "Chicken Shawarma Bowl Style",
+    "required": ["chicken", "rice"],
+    "optional": ["cucumber", "tomato", "garlic", "yogurt", "cumin", "paprika"],
+    "cuisine": "Middle Eastern",
+    "meal_type": "Dinner",
+    "protein": "Chicken",
+    "quick_meal": false,
+    "vegetarian": false,
+    "high_protein": true
+  },
+  {
+    "name": "Falafel Bowl Style",
+    "required": ["chickpea", "garlic"],
+    "optional": ["cucumber", "tomato", "yogurt", "lemon", "parsley", "cumin"],
+    "cuisine": "Middle Eastern",
+    "meal_type": "Lunch",
+    "protein": "Chickpeas",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": false
+  },
+
+  {
+    "name": "Paella Style Rice",
+    "required": ["rice", "tomato", "onion"],
+    "optional": ["shrimp", "chicken", "bell pepper", "peas", "paprika", "lemon"],
+    "cuisine": "Spanish",
+    "meal_type": "Dinner",
+    "protein": "Mixed",
+    "quick_meal": false,
+    "vegetarian": false,
+    "high_protein": false
+  },
+  {
+    "name": "Spanish Tortilla Style",
+    "required": ["egg", "potato", "onion"],
+    "optional": ["olive oil", "paprika"],
+    "cuisine": "Spanish",
+    "meal_type": "Breakfast",
+    "protein": "Egg",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": true
+  },
+
+  {
+    "name": "Caldo Verde Style",
+    "required": ["potato", "broth", "greens"],
+    "optional": ["sausage", "garlic", "olive oil", "onion"],
+    "cuisine": "Portuguese",
+    "meal_type": "Dinner",
+    "protein": "Sausage",
+    "quick_meal": false,
+    "vegetarian": false,
+    "high_protein": false
+  },
+  {
+    "name": "Portuguese Garlic Shrimp Style",
+    "required": ["shrimp", "garlic", "olive oil"],
+    "optional": ["lemon", "paprika", "bread", "parsley"],
+    "cuisine": "Portuguese",
+    "meal_type": "Dinner",
+    "protein": "Shrimp",
+    "quick_meal": true,
+    "vegetarian": false,
+    "high_protein": true
+  },
+
+  {
+    "name": "Coq au Vin Style",
+    "required": ["chicken", "onion", "mushroom"],
+    "optional": ["garlic", "carrot", "thyme", "butter"],
+    "cuisine": "French",
+    "meal_type": "Dinner",
+    "protein": "Chicken",
+    "quick_meal": false,
+    "vegetarian": false,
+    "high_protein": true
+  },
+  {
+    "name": "French Omelet Style",
+    "required": ["egg", "butter"],
+    "optional": ["cheese", "herbs", "mushroom"],
+    "cuisine": "French",
+    "meal_type": "Breakfast",
+    "protein": "Egg",
+    "quick_meal": true,
+    "vegetarian": true,
+    "high_protein": true
+  },
+
+  {
+    "name": "Jerk Chicken Style",
+    "required": ["chicken", "garlic"],
+    "optional": ["lime", "thyme", "rice", "beans", "chili flakes"],
+    "cuisine": "Caribbean",
+    "meal_type": "Dinner",
+    "protein": "Chicken",
+    "quick_meal": false,
+    "vegetarian": false,
+    "high_protein": true
+  },
+  {
+    "name": "Rice and Peas Style",
+    "required": ["rice", "bean"],
+    "optional": ["garlic", "thyme", "green onion"],
+    "cuisine": "Caribbean",
+    "meal_type": "Side",
+    "protein": "Beans",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": false
+  },
+
+  {
+    "name": "Tagine Style Chickpeas",
+    "required": ["chickpea", "tomato", "onion"],
+    "optional": ["cinnamon", "cumin", "carrot", "lemon"],
+    "cuisine": "Moroccan",
+    "meal_type": "Dinner",
+    "protein": "Chickpeas",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": false
+  },
+  {
+    "name": "Moroccan Chicken Style",
+    "required": ["chicken", "onion", "garlic"],
+    "optional": ["cinnamon", "cumin", "lemon", "olive", "carrot"],
+    "cuisine": "Moroccan",
+    "meal_type": "Dinner",
+    "protein": "Chicken",
+    "quick_meal": false,
+    "vegetarian": false,
+    "high_protein": true
+  },
+
+  {
+    "name": "Berbere Lentils Style",
+    "required": ["lentil", "onion", "garlic"],
+    "optional": ["tomato", "ginger", "paprika", "rice"],
+    "cuisine": "Ethiopian",
+    "meal_type": "Dinner",
+    "protein": "Lentils",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": false
+  },
+  {
+    "name": "Cabbage Potato Stew Style",
+    "required": ["cabbage", "potato", "onion"],
+    "optional": ["carrot", "garlic", "paprika"],
+    "cuisine": "Ethiopian",
+    "meal_type": "Dinner",
+    "protein": "None",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": false
+  },
+
+  {
+    "name": "Smothered Chicken Style",
+    "required": ["chicken", "onion"],
+    "optional": ["garlic", "broth", "rice", "black pepper"],
+    "cuisine": "Southern",
+    "meal_type": "Dinner",
+    "protein": "Chicken",
+    "quick_meal": false,
+    "vegetarian": false,
+    "high_protein": true
+  },
+  {
+    "name": "Breakfast Potatoes",
+    "required": ["potato", "oil"],
+    "optional": ["onion", "paprika", "garlic powder", "egg"],
+    "cuisine": "Southern",
+    "meal_type": "Breakfast",
+    "protein": "None",
+    "quick_meal": true,
+    "vegetarian": true,
+    "high_protein": false
+  },
+
+  {
+    "name": "Red Beans and Rice Style",
+    "required": ["kidney bean", "rice", "onion"],
+    "optional": ["sausage", "garlic", "bell pepper", "paprika"],
+    "cuisine": "Cajun/Creole",
+    "meal_type": "Dinner",
+    "protein": "Beans",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": false
+  },
+  {
+    "name": "Cajun Shrimp Rice Style",
+    "required": ["shrimp", "rice", "bell pepper"],
+    "optional": ["onion", "garlic", "paprika", "butter"],
+    "cuisine": "Cajun/Creole",
+    "meal_type": "Dinner",
+    "protein": "Shrimp",
+    "quick_meal": true,
+    "vegetarian": false,
+    "high_protein": true
+  },
+
+  {
+    "name": "Three Sisters Bowl Style",
+    "required": ["corn", "bean", "squash"],
+    "optional": ["onion", "sage", "broth"],
+    "cuisine": "Indigenous",
+    "meal_type": "Dinner",
+    "protein": "Beans",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": false
+  },
+  {
+    "name": "Wild Rice Mushroom Bowl Style",
+    "required": ["rice", "mushroom"],
+    "optional": ["onion", "garlic", "thyme", "greens"],
+    "cuisine": "Indigenous",
+    "meal_type": "Lunch",
+    "protein": "None",
+    "quick_meal": false,
+    "vegetarian": true,
+    "high_protein": false
+  },
+
+  {
+    "name": "Chicken Sandwich",
+    "required": ["chicken", "bread"],
+    "optional": ["lettuce", "tomato", "mayonnaise", "cheese"],
+    "cuisine": "American",
+    "meal_type": "Lunch",
+    "protein": "Chicken",
+    "quick_meal": true,
+    "vegetarian": false,
+    "high_protein": true
+  },
+  {
+    "name": "Tuna Salad Sandwich",
+    "required": ["tuna", "bread", "mayonnaise"],
+    "optional": ["celery", "onion", "pickle", "lettuce"],
+    "cuisine": "American",
+    "meal_type": "Lunch",
+    "protein": "Tuna",
+    "quick_meal": true,
+    "vegetarian": false,
+    "high_protein": true
+  },
+  {
+    "name": "Smoothie",
+    "required": ["banana", "milk"],
+    "optional": ["strawberry", "blueberry", "yogurt", "honey"],
+    "cuisine": "American",
+    "meal_type": "Breakfast",
+    "protein": "None",
+    "quick_meal": true,
+    "vegetarian": true,
+    "high_protein": false
+  }
+]
