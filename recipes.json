@@ -1,0 +1,196 @@
+{
+  "recipes": [
+    {
+      "name": "Classic Cheeseburger",
+      "cuisine": "American",
+      "meal_style": "Comfort Food",
+      "time_minutes": 25,
+      "skill_level": "Beginner",
+      "cooking_method": "Stovetop",
+      "temperature": "Medium-High Heat",
+      "quick_meal": true,
+      "high_protein": true,
+      "required": ["beef", "bread", "cheddar"],
+      "optional": ["lettuce", "tomato", "onion", "pickle", "ketchup", "mustard"],
+      "ingredients_full": [
+        "1 lb ground beef",
+        "4 burger buns",
+        "4 slices cheddar cheese",
+        "1 tomato, sliced",
+        "1/2 onion, thinly sliced",
+        "4 lettuce leaves",
+        "pickle slices (optional)",
+        "2 tbsp ketchup",
+        "2 tbsp mustard",
+        "salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Divide ground beef into 4 equal patties. Season both sides with salt and black pepper.",
+        "Heat a skillet over medium-high heat.",
+        "Cook patties for 3–4 minutes per side.",
+        "Add cheddar cheese during the last minute and cover to melt.",
+        "Toast buns lightly in the same pan or separate pan.",
+        "Assemble burgers with lettuce, tomato, onion, pickles, ketchup, and mustard.",
+        "Serve immediately."
+      ],
+      "chef_upgrade": [
+        "Toast buns with butter for better flavor.",
+        "Add caramelized onions (cook onions slowly for 15 minutes).",
+        "Use a mix of beef (80/20) for juicier burgers."
+      ]
+    },
+    {
+      "name": "Garlic Chicken Rice Bowl",
+      "cuisine": "American",
+      "meal_style": "Quick & Easy",
+      "time_minutes": 30,
+      "skill_level": "Beginner",
+      "cooking_method": "Stovetop",
+      "temperature": "Medium Heat",
+      "quick_meal": true,
+      "high_protein": true,
+      "required": ["chicken", "rice", "garlic"],
+      "optional": ["soy sauce", "broccoli", "green onion", "butter"],
+      "ingredients_full": [
+        "2 chicken breasts, sliced into strips",
+        "1 cup uncooked rice",
+        "2 cloves garlic, minced",
+        "1 tbsp olive oil",
+        "1 tbsp butter",
+        "1 cup broccoli florets",
+        "2 tbsp soy sauce",
+        "2 green onions, chopped",
+        "salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Cook rice according to package instructions.",
+        "Heat olive oil in a skillet over medium heat.",
+        "Add chicken, season with salt and pepper, and cook 6–7 minutes until done.",
+        "Add minced garlic and cook for 1 minute.",
+        "Add broccoli and cook for 3–4 minutes.",
+        "Stir in soy sauce and butter.",
+        "Serve chicken and vegetables over rice.",
+        "Top with green onions."
+      ],
+      "chef_upgrade": [
+        "Marinate chicken in soy sauce and garlic for 30 minutes before cooking.",
+        "Add sesame oil for deeper flavor.",
+        "Top with sesame seeds or chili oil."
+      ]
+    },
+    {
+      "name": "Sheet Pan Chicken and Vegetables",
+      "cuisine": "American",
+      "meal_style": "One-Pot Meals",
+      "time_minutes": 40,
+      "skill_level": "Beginner",
+      "cooking_method": "Oven",
+      "temperature": "425°F",
+      "quick_meal": false,
+      "high_protein": true,
+      "required": ["chicken", "potato", "carrot"],
+      "optional": ["broccoli", "garlic", "paprika", "olive oil"],
+      "ingredients_full": [
+        "4 chicken thighs or breasts",
+        "3 potatoes, chopped into cubes",
+        "3 carrots, sliced",
+        "1 cup broccoli florets",
+        "3 tbsp olive oil",
+        "3 cloves garlic, minced",
+        "1 tsp paprika",
+        "salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 425°F.",
+        "Place chicken, potatoes, carrots, and broccoli on a sheet pan.",
+        "Drizzle with olive oil and add garlic, paprika, salt, and pepper.",
+        "Toss everything to coat evenly.",
+        "Spread into a single layer.",
+        "Roast for 30–35 minutes until chicken is cooked through and vegetables are tender.",
+        "Serve hot."
+      ],
+      "chef_upgrade": [
+        "Use bone-in chicken for more flavor.",
+        "Add fresh herbs like rosemary or thyme.",
+        "Preheat sheet pan before adding food for crispier texture."
+      ]
+    },
+    {
+      "name": "Chicken Tacos",
+      "cuisine": "Mexican",
+      "meal_style": "Street Food Style",
+      "time_minutes": 25,
+      "skill_level": "Beginner",
+      "cooking_method": "Stovetop",
+      "temperature": "Medium-High Heat",
+      "quick_meal": true,
+      "high_protein": true,
+      "required": ["chicken", "tortilla"],
+      "optional": ["onion", "cilantro", "lime", "cheese"],
+      "ingredients_full": [
+        "1 lb chicken breast, diced",
+        "8 corn or flour tortillas",
+        "1/2 onion, diced",
+        "2 cloves garlic, minced",
+        "1 tsp cumin",
+        "1 tsp paprika",
+        "1 lime, cut into wedges",
+        "1/2 cup shredded cheese",
+        "1/4 cup cilantro, chopped",
+        "1 tbsp oil",
+        "salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Heat oil in a skillet over medium-high heat.",
+        "Add onion and garlic and cook 2–3 minutes.",
+        "Add chicken, cumin, paprika, salt, and pepper.",
+        "Cook for 8–10 minutes until chicken is done.",
+        "Warm tortillas in a separate pan.",
+        "Fill tortillas with chicken mixture.",
+        "Top with cheese, cilantro, and lime juice.",
+        "Serve immediately."
+      ],
+      "chef_upgrade": [
+        "Char tortillas directly over flame for flavor.",
+        "Add homemade pico de gallo.",
+        "Use a squeeze of lime crema (sour cream + lime)."
+      ]
+    },
+    {
+      "name": "Garlic Butter Salmon",
+      "cuisine": "American",
+      "meal_style": "Seafood",
+      "time_minutes": 20,
+      "skill_level": "Intermediate",
+      "cooking_method": "Stovetop",
+      "temperature": "Medium Heat",
+      "quick_meal": true,
+      "high_protein": true,
+      "required": ["salmon", "garlic", "butter"],
+      "optional": ["lemon", "parsley", "olive oil"],
+      "ingredients_full": [
+        "2 salmon fillets",
+        "3 cloves garlic, minced",
+        "2 tbsp butter",
+        "1 tbsp olive oil",
+        "1 lemon, sliced",
+        "1 tbsp parsley, chopped",
+        "salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Season salmon with salt and black pepper.",
+        "Heat olive oil in a skillet over medium heat.",
+        "Cook salmon skin-side down for 4–5 minutes.",
+        "Flip and cook another 3–4 minutes.",
+        "Add butter and garlic, spoon over salmon.",
+        "Add lemon slices and cook 1 more minute.",
+        "Garnish with parsley and serve."
+      ],
+      "chef_upgrade": [
+        "Use high-quality butter.",
+        "Finish with lemon zest.",
+        "Add white wine to the pan sauce."
+      ]
+    }
+  ]
+}
