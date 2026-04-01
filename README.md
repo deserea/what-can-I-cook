@@ -23,3 +23,8 @@
 
    ```bash
    python cook.py
+   ## Run as a web app
+
+1. Install Streamlit:
+   ```bash
+   pip install streamlit
