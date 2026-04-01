@@ -12,3 +12,14 @@
 1. Install Streamlit:
    ```bash
    pip install streamlit
+## Quick Start (Beginner Friendly)
+
+1. Click the green **Code** button on this repository
+2. Click **Download ZIP**
+3. Unzip the folder on your computer
+4. Make sure Python is installed from https://python.org
+5. Open Terminal or Command Prompt in the folder
+6. Run:
+
+   ```bash
+   python cook.py
