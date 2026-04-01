@@ -1,7 +1,8 @@
 [
   {
     "name": "Chicken Tacos",
-    "ingredients": ["chicken", "tortilla", "onion", "garlic", "lime", "cumin", "paprika"],
+    "required": ["chicken", "tortilla", "onion", "garlic"],
+    "optional": ["lime", "cumin", "paprika", "cheddar", "avocado", "cilantro"],
     "cuisine": "Mexican",
     "meal_type": "Dinner",
     "protein": "Chicken",
@@ -11,7 +12,8 @@
   },
   {
     "name": "Beef Tacos",
-    "ingredients": ["beef", "tortilla", "onion", "garlic", "lime", "cumin", "paprika"],
+    "required": ["beef", "tortilla", "onion", "garlic"],
+    "optional": ["lime", "cumin", "paprika", "cheddar", "avocado", "cilantro"],
     "cuisine": "Mexican",
     "meal_type": "Dinner",
     "protein": "Beef",
@@ -21,7 +23,8 @@
   },
   {
     "name": "Chicken Quesadilla",
-    "ingredients": ["chicken", "tortilla", "cheddar", "onion"],
+    "required": ["chicken", "tortilla", "cheddar"],
+    "optional": ["onion", "bell pepper", "sour cream", "avocado"],
     "cuisine": "Mexican",
     "meal_type": "Lunch",
     "protein": "Chicken",
@@ -31,7 +34,8 @@
   },
   {
     "name": "Bean and Cheese Quesadilla",
-    "ingredients": ["black bean", "cheddar", "tortilla"],
+    "required": ["black bean", "cheddar", "tortilla"],
+    "optional": ["onion", "cumin", "avocado", "lime"],
     "cuisine": "Mexican",
     "meal_type": "Lunch",
     "protein": "Beans",
@@ -41,7 +45,8 @@
   },
   {
     "name": "Breakfast Scramble",
-    "ingredients": ["egg", "cheddar", "onion", "butter"],
+    "required": ["egg", "cheddar", "butter"],
+    "optional": ["onion", "bell pepper", "spinach", "mushroom"],
     "cuisine": "American",
     "meal_type": "Breakfast",
     "protein": "Egg",
@@ -51,7 +56,8 @@
   },
   {
     "name": "Veggie Omelet",
-    "ingredients": ["egg", "onion", "bell pepper", "mushroom", "spinach", "butter"],
+    "required": ["egg", "butter"],
+    "optional": ["onion", "bell pepper", "mushroom", "spinach", "cheddar"],
     "cuisine": "American",
     "meal_type": "Breakfast",
     "protein": "Egg",
@@ -61,7 +67,8 @@
   },
   {
     "name": "Egg and Cheese Breakfast Wrap",
-    "ingredients": ["egg", "cheddar", "tortilla"],
+    "required": ["egg", "cheddar", "tortilla"],
+    "optional": ["onion", "hot sauce", "avocado"],
     "cuisine": "American",
     "meal_type": "Breakfast",
     "protein": "Egg",
@@ -71,7 +78,8 @@
   },
   {
     "name": "French Toast",
-    "ingredients": ["bread", "egg", "milk", "butter", "cinnamon"],
+    "required": ["bread", "egg", "milk"],
+    "optional": ["butter", "cinnamon", "vanilla", "banana", "berry"],
     "cuisine": "American",
     "meal_type": "Breakfast",
     "protein": "Egg",
@@ -81,7 +89,8 @@
   },
   {
     "name": "Peanut Butter Banana Toast",
-    "ingredients": ["bread", "peanut butter", "banana"],
+    "required": ["bread", "peanut butter", "banana"],
+    "optional": ["cinnamon", "honey"],
     "cuisine": "American",
     "meal_type": "Breakfast",
     "protein": "Peanut Butter",
@@ -91,7 +100,8 @@
   },
   {
     "name": "Berry Oatmeal",
-    "ingredients": ["oat", "milk", "blueberry", "strawberry", "cinnamon"],
+    "required": ["oat", "milk"],
+    "optional": ["blueberry", "strawberry", "banana", "cinnamon", "honey"],
     "cuisine": "American",
     "meal_type": "Breakfast",
     "protein": "None",
@@ -101,7 +111,8 @@
   },
   {
     "name": "Fruit Yogurt Bowl",
-    "ingredients": ["yogurt", "banana", "blueberry", "strawberry", "oat"],
+    "required": ["yogurt"],
+    "optional": ["banana", "blueberry", "strawberry", "oat", "honey"],
     "cuisine": "American",
     "meal_type": "Breakfast",
     "protein": "Yogurt",
@@ -111,7 +122,8 @@
   },
   {
     "name": "Pasta with Garlic and Olive Oil",
-    "ingredients": ["pasta", "garlic", "olive oil", "red pepper flakes", "parmesan"],
+    "required": ["pasta", "garlic", "olive oil"],
+    "optional": ["red pepper flakes", "parmesan", "lemon", "parsley"],
     "cuisine": "Italian",
     "meal_type": "Dinner",
     "protein": "None",
@@ -121,7 +133,8 @@
   },
   {
     "name": "Sausage Tomato Pasta",
-    "ingredients": ["sausage", "pasta", "tomato", "onion", "garlic", "olive oil"],
+    "required": ["sausage", "pasta", "tomato", "onion", "garlic"],
+    "optional": ["olive oil", "parmesan", "basil", "red pepper flakes"],
     "cuisine": "Italian",
     "meal_type": "Dinner",
     "protein": "Sausage",
@@ -131,7 +144,8 @@
   },
   {
     "name": "Italian Sausage Pasta Bake",
-    "ingredients": ["sausage", "pasta", "tomato", "mozzarella", "onion", "garlic"],
+    "required": ["sausage", "pasta", "tomato", "mozzarella"],
+    "optional": ["onion", "garlic", "parmesan", "basil"],
     "cuisine": "Italian",
     "meal_type": "Dinner",
     "protein": "Sausage",
@@ -141,7 +155,8 @@
   },
   {
     "name": "Tomato Pasta",
-    "ingredients": ["pasta", "tomato", "garlic", "onion", "olive oil"],
+    "required": ["pasta", "tomato", "garlic"],
+    "optional": ["onion", "olive oil", "parmesan", "basil"],
     "cuisine": "Italian",
     "meal_type": "Dinner",
     "protein": "None",
@@ -151,7 +166,8 @@
   },
   {
     "name": "Creamy Chicken Pasta",
-    "ingredients": ["chicken", "pasta", "garlic", "parmesan", "butter"],
+    "required": ["chicken", "pasta", "parmesan", "butter"],
+    "optional": ["garlic", "spinach", "mushroom", "red pepper flakes"],
     "cuisine": "Italian",
     "meal_type": "Dinner",
     "protein": "Chicken",
@@ -161,7 +177,8 @@
   },
   {
     "name": "Spinach Pasta",
-    "ingredients": ["pasta", "spinach", "garlic", "olive oil", "parmesan"],
+    "required": ["pasta", "spinach", "garlic"],
+    "optional": ["olive oil", "parmesan", "lemon"],
     "cuisine": "Italian",
     "meal_type": "Dinner",
     "protein": "None",
@@ -171,7 +188,8 @@
   },
   {
     "name": "Mushroom Pasta",
-    "ingredients": ["pasta", "mushroom", "garlic", "butter", "parmesan"],
+    "required": ["pasta", "mushroom", "garlic"],
+    "optional": ["butter", "parmesan", "thyme"],
     "cuisine": "Italian",
     "meal_type": "Dinner",
     "protein": "None",
@@ -181,7 +199,8 @@
   },
   {
     "name": "Chicken Alfredo Style Pasta",
-    "ingredients": ["chicken", "pasta", "butter", "parmesan", "garlic"],
+    "required": ["chicken", "pasta", "parmesan", "butter"],
+    "optional": ["garlic", "black pepper", "parsley"],
     "cuisine": "Italian",
     "meal_type": "Dinner",
     "protein": "Chicken",
@@ -191,7 +210,8 @@
   },
   {
     "name": "Caprese Salad",
-    "ingredients": ["tomato", "mozzarella", "basil", "olive oil"],
+    "required": ["tomato", "mozzarella"],
+    "optional": ["basil", "olive oil", "balsamic"],
     "cuisine": "Italian",
     "meal_type": "Lunch",
     "protein": "Cheese",
@@ -201,7 +221,8 @@
   },
   {
     "name": "Beef Stir-Fry",
-    "ingredients": ["beef", "bell pepper", "onion", "soy sauce", "garlic", "oil"],
+    "required": ["beef", "bell pepper", "onion", "soy sauce"],
+    "optional": ["garlic", "ginger", "rice", "sesame oil"],
     "cuisine": "Asian",
     "meal_type": "Dinner",
     "protein": "Beef",
@@ -211,7 +232,8 @@
   },
   {
     "name": "Chicken Stir-Fry",
-    "ingredients": ["chicken", "bell pepper", "onion", "soy sauce", "garlic", "oil"],
+    "required": ["chicken", "bell pepper", "onion", "soy sauce"],
+    "optional": ["garlic", "ginger", "rice", "broccoli", "sesame oil"],
     "cuisine": "Asian",
     "meal_type": "Dinner",
     "protein": "Chicken",
@@ -221,7 +243,8 @@
   },
   {
     "name": "Vegetable Fried Rice",
-    "ingredients": ["rice", "egg", "carrot", "green onion", "soy sauce", "oil"],
+    "required": ["rice", "egg", "soy sauce"],
+    "optional": ["carrot", "green onion", "peas", "oil"],
     "cuisine": "Asian",
     "meal_type": "Dinner",
     "protein": "Egg",
@@ -231,7 +254,8 @@
   },
   {
     "name": "Chicken Fried Rice",
-    "ingredients": ["chicken", "rice", "egg", "soy sauce", "green onion", "oil"],
+    "required": ["chicken", "rice", "egg", "soy sauce"],
+    "optional": ["green onion", "carrot", "peas", "oil"],
     "cuisine": "Asian",
     "meal_type": "Dinner",
     "protein": "Chicken",
@@ -241,7 +265,8 @@
   },
   {
     "name": "Broccoli Stir-Fry",
-    "ingredients": ["broccoli", "soy sauce", "garlic", "oil"],
+    "required": ["broccoli", "soy sauce", "garlic"],
+    "optional": ["oil", "ginger", "sesame seeds"],
     "cuisine": "Asian",
     "meal_type": "Dinner",
     "protein": "None",
@@ -251,7 +276,8 @@
   },
   {
     "name": "Chicken Burrito Bowl",
-    "ingredients": ["chicken", "rice", "black bean", "corn", "avocado", "lime"],
+    "required": ["chicken", "rice", "black bean"],
+    "optional": ["corn", "avocado", "lime", "cheddar", "cilantro"],
     "cuisine": "Mexican",
     "meal_type": "Dinner",
     "protein": "Chicken",
@@ -261,7 +287,8 @@
   },
   {
     "name": "Beef Burrito Bowl",
-    "ingredients": ["beef", "rice", "black bean", "corn", "avocado", "lime"],
+    "required": ["beef", "rice", "black bean"],
+    "optional": ["corn", "avocado", "lime", "cheddar", "cilantro"],
     "cuisine": "Mexican",
     "meal_type": "Dinner",
     "protein": "Beef",
@@ -271,7 +298,8 @@
   },
   {
     "name": "Black Bean Tacos",
-    "ingredients": ["black bean", "tortilla", "onion", "lime", "cumin"],
+    "required": ["black bean", "tortilla"],
+    "optional": ["onion", "lime", "cumin", "avocado", "cheddar"],
     "cuisine": "Mexican",
     "meal_type": "Dinner",
     "protein": "Beans",
@@ -281,7 +309,8 @@
   },
   {
     "name": "Chicken Fajitas",
-    "ingredients": ["chicken", "bell pepper", "onion", "tortilla", "lime", "cumin"],
+    "required": ["chicken", "bell pepper", "onion", "tortilla"],
+    "optional": ["lime", "cumin", "paprika", "avocado", "sour cream"],
     "cuisine": "Mexican",
     "meal_type": "Dinner",
     "protein": "Chicken",
@@ -291,7 +320,8 @@
   },
   {
     "name": "Beef Fajitas",
-    "ingredients": ["beef", "bell pepper", "onion", "tortilla", "lime", "cumin"],
+    "required": ["beef", "bell pepper", "onion", "tortilla"],
+    "optional": ["lime", "cumin", "paprika", "avocado", "sour cream"],
     "cuisine": "Mexican",
     "meal_type": "Dinner",
     "protein": "Beef",
@@ -301,7 +331,8 @@
   },
   {
     "name": "Chicken Caesar Wrap",
-    "ingredients": ["chicken", "tortilla", "romaine", "parmesan"],
+    "required": ["chicken", "tortilla", "romaine"],
+    "optional": ["parmesan", "caesar dressing", "black pepper"],
     "cuisine": "American",
     "meal_type": "Lunch",
     "protein": "Chicken",
@@ -311,7 +342,8 @@
   },
   {
     "name": "Chicken Salad",
-    "ingredients": ["chicken", "lettuce", "tomato", "cucumber", "olive oil", "vinegar"],
+    "required": ["chicken", "lettuce", "tomato", "cucumber"],
+    "optional": ["olive oil", "vinegar", "avocado", "feta"],
     "cuisine": "American",
     "meal_type": "Lunch",
     "protein": "Chicken",
@@ -321,7 +353,8 @@
   },
   {
     "name": "Greek Salad",
-    "ingredients": ["cucumber", "tomato", "red onion", "feta", "olive oil", "vinegar"],
+    "required": ["cucumber", "tomato", "feta"],
+    "optional": ["red onion", "olive oil", "vinegar", "olive"],
     "cuisine": "Mediterranean",
     "meal_type": "Lunch",
     "protein": "Cheese",
@@ -331,7 +364,8 @@
   },
   {
     "name": "Chickpea Salad",
-    "ingredients": ["chickpea", "cucumber", "tomato", "red onion", "olive oil", "lemon"],
+    "required": ["chickpea", "cucumber", "tomato"],
+    "optional": ["red onion", "olive oil", "lemon", "feta", "parsley"],
     "cuisine": "Mediterranean",
     "meal_type": "Lunch",
     "protein": "Chickpeas",
@@ -341,7 +375,8 @@
   },
   {
     "name": "Quinoa Veggie Bowl",
-    "ingredients": ["quinoa", "chickpea", "cucumber", "tomato", "olive oil", "lemon"],
+    "required": ["quinoa", "chickpea"],
+    "optional": ["cucumber", "tomato", "olive oil", "lemon", "feta"],
     "cuisine": "Mediterranean",
     "meal_type": "Lunch",
     "protein": "Chickpeas",
@@ -351,262 +386,9 @@
   },
   {
     "name": "Chicken Noodle Soup",
-    "ingredients": ["chicken", "broth", "carrot", "celery", "onion", "pasta"],
+    "required": ["chicken", "broth", "carrot", "celery"],
+    "optional": ["onion", "pasta", "parsley", "thyme"],
     "cuisine": "American",
     "meal_type": "Dinner",
     "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Lentil Soup",
-    "ingredients": ["lentil", "carrot", "celery", "onion", "garlic", "broth"],
-    "cuisine": "Mediterranean",
-    "meal_type": "Dinner",
-    "protein": "Lentils",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Bean Soup",
-    "ingredients": ["white bean", "carrot", "celery", "onion", "garlic", "broth"],
-    "cuisine": "American",
-    "meal_type": "Dinner",
-    "protein": "Beans",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Tomato Soup",
-    "ingredients": ["tomato", "onion", "garlic", "broth", "olive oil"],
-    "cuisine": "American",
-    "meal_type": "Lunch",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Chicken and Rice Soup",
-    "ingredients": ["chicken", "rice", "carrot", "celery", "onion", "broth"],
-    "cuisine": "American",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Roasted Veggie Bowl",
-    "ingredients": ["sweet potato", "zucchini", "bell pepper", "onion", "olive oil"],
-    "cuisine": "Mediterranean",
-    "meal_type": "Dinner",
-    "protein": "None",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Ground Turkey Skillet",
-    "ingredients": ["turkey", "onion", "garlic", "bell pepper", "tomato"],
-    "cuisine": "American",
-    "meal_type": "Dinner",
-    "protein": "Turkey",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Beef and Potato Hash",
-    "ingredients": ["beef", "potato", "onion", "garlic", "oil"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "Beef",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Breakfast Potatoes",
-    "ingredients": ["potato", "onion", "oil", "paprika"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Roasted Chicken and Potatoes",
-    "ingredients": ["chicken", "potato", "onion", "garlic", "olive oil", "rosemary"],
-    "cuisine": "American",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Sheet Pan Sausage Veggies",
-    "ingredients": ["sausage", "potato", "bell pepper", "onion", "olive oil"],
-    "cuisine": "American",
-    "meal_type": "Dinner",
-    "protein": "Sausage",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Shrimp Tacos",
-    "ingredients": ["shrimp", "tortilla", "lime", "cabbage", "garlic"],
-    "cuisine": "Mexican",
-    "meal_type": "Dinner",
-    "protein": "Shrimp",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Garlic Shrimp Pasta",
-    "ingredients": ["shrimp", "pasta", "garlic", "butter", "lemon"],
-    "cuisine": "Italian",
-    "meal_type": "Dinner",
-    "protein": "Shrimp",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Salmon Rice Bowl",
-    "ingredients": ["salmon", "rice", "cucumber", "avocado", "soy sauce"],
-    "cuisine": "Asian",
-    "meal_type": "Dinner",
-    "protein": "Salmon",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Baked Salmon",
-    "ingredients": ["salmon", "lemon", "garlic", "olive oil"],
-    "cuisine": "American",
-    "meal_type": "Dinner",
-    "protein": "Salmon",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Tuna Salad Sandwich",
-    "ingredients": ["tuna", "bread", "mayonnaise", "celery", "onion"],
-    "cuisine": "American",
-    "meal_type": "Lunch",
-    "protein": "Tuna",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Chicken Sandwich",
-    "ingredients": ["chicken", "bread", "lettuce", "tomato"],
-    "cuisine": "American",
-    "meal_type": "Lunch",
-    "protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "BLT",
-    "ingredients": ["bacon", "bread", "lettuce", "tomato"],
-    "cuisine": "American",
-    "meal_type": "Lunch",
-    "protein": "Bacon",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": false
-  },
-  {
-    "name": "Smoothie",
-    "ingredients": ["banana", "strawberry", "blueberry", "milk"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Apple Cinnamon Oatmeal",
-    "ingredients": ["oat", "apple", "cinnamon", "milk"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Veggie Rice Bowl",
-    "ingredients": ["rice", "broccoli", "carrot", "bell pepper", "soy sauce"],
-    "cuisine": "Asian",
-    "meal_type": "Dinner",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Broccoli Cheddar Pasta",
-    "ingredients": ["pasta", "broccoli", "cheddar", "butter"],
-    "cuisine": "American",
-    "meal_type": "Dinner",
-    "protein": "Cheese",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Zucchini Saute",
-    "ingredients": ["zucchini", "garlic", "olive oil"],
-    "cuisine": "Mediterranean",
-    "meal_type": "Side",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Roasted Carrots",
-    "ingredients": ["carrot", "olive oil", "salt", "pepper"],
-    "cuisine": "American",
-    "meal_type": "Side",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Cucumber Tomato Salad",
-    "ingredients": ["cucumber", "tomato", "red onion", "olive oil", "vinegar"],
-    "cuisine": "Mediterranean",
-    "meal_type": "Side",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Spinach Egg Scramble",
-    "ingredients": ["egg", "spinach", "butter", "cheddar"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "Egg",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": true
-  }
-]
+    "quick
