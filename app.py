@@ -5,6 +5,57 @@ import streamlit as st
 
 st.set_page_config(page_title="What Can I Cook?", page_icon="🍽️", layout="wide")
 
+# ====================== SMART STARTER FLOW ======================
+
+st.title("🍽️ What Can I Cook?")
+st.markdown("Let’s build your meal step-by-step.")
+
+# Step 1 — Cuisine
+st.subheader("1️⃣ What cuisine are you feeling?")
+selected_cuisine = st.selectbox(
+    "Choose cuisine",
+    CUISINE_OPTIONS
+)
+
+# Step 2 — Skill Level
+st.subheader("2️⃣ Your cooking level")
+selected_skill = st.selectbox(
+    "Choose skill level",
+    ["Beginner", "Intermediate", "Advanced"]
+)
+
+# Step 3 — Time
+st.subheader("3️⃣ How much time do you have?")
+selected_time = st.selectbox(
+    "Select time",
+    list(TIME_FILTERS.keys())
+)
+
+# Step 4 — Meal Style
+st.subheader("4️⃣ What type of meal?")
+selected_meal_style = st.selectbox(
+    "Meal style",
+    MEAL_STYLE_OPTIONS
+)
+
+# Step 5 — Goal
+st.subheader("5️⃣ Any goals?")
+selected_meal_goal = st.selectbox(
+    "Meal goal",
+    MEAL_GOAL_OPTIONS
+)
+
+# Step 6 — Ingredients
+st.subheader("6️⃣ What ingredients do you have?")
+user_input = st.text_area(
+    "Enter ingredients (one per line)",
+    placeholder="chicken\nrice\ngarlic\nonion",
+    height=150
+)
+
+# Process ingredients
+user_ingredients = [line.strip() for line in user_input.split("\n") if line.strip()]
+
 # ======================
 # LOAD RECIPES
 # ======================
