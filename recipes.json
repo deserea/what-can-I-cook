@@ -1,11 +1,4 @@
-[
-  {
-    "name": "Chicken Tacos",
-    "required": ["chicken", "tortilla", "onion", "garlic"],
-    "optional": ["lime", "cumin", "paprika", "cheddar", "avocado", "cilantro"],
-    "cuisine": "Mexican",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
+protein": "Chicken",
     "quick_meal": true,
     "vegetarian": false,
     "high_protein": true,
