@@ -7,8 +7,6 @@ st.set_page_config(page_title="What Can I Cook?", page_icon="🍽️", layout="w
 
 # ====================== SMART STARTER FLOW ======================
 
-st.title("🍽️ What Can I Cook?")
-st.markdown("Let’s build your meal step-by-step.")
 
 # Step 1 — Cuisine
 st.subheader("1️⃣ What cuisine are you feeling?")
