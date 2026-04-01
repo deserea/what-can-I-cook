@@ -7,46 +7,27 @@ st.set_page_config(page_title="What Can I Cook?", page_icon="🍽️", layout="w
 
 # ====================== SMART STARTER FLOW ======================
 
+st.title("🍽️ What Can I Cook?")
+st.markdown("Let’s build your meal step-by-step.")
 
 # Step 1 — Cuisine
-st.subheader("1️⃣ What cuisine are you feeling?")
-selected_cuisine = st.selectbox(
-    "Choose cuisine",
-    CUISINE_OPTIONS
-)
+selected_cuisine = st.selectbox("1️⃣ Cuisine", CUISINE_OPTIONS)
 
-# Step 2 — Skill Level
-st.subheader("2️⃣ Your cooking level")
-selected_skill = st.selectbox(
-    "Choose skill level",
-    ["Beginner", "Intermediate", "Advanced"]
-)
+# Step 2 — Skill
+selected_skill = st.selectbox("2️⃣ Skill Level", ["All", "Beginner", "Intermediate", "Advanced"])
 
 # Step 3 — Time
-st.subheader("3️⃣ How much time do you have?")
-selected_time = st.selectbox(
-    "Select time",
-    list(TIME_FILTERS.keys())
-)
+selected_time = st.selectbox("3️⃣ Time", list(TIME_FILTERS.keys()))
 
 # Step 4 — Meal Style
-st.subheader("4️⃣ What type of meal?")
-selected_meal_style = st.selectbox(
-    "Meal style",
-    MEAL_STYLE_OPTIONS
-)
+selected_meal_style = st.selectbox("4️⃣ Meal Style", MEAL_STYLE_OPTIONS)
 
 # Step 5 — Goal
-st.subheader("5️⃣ Any goals?")
-selected_meal_goal = st.selectbox(
-    "Meal goal",
-    MEAL_GOAL_OPTIONS
-)
+selected_meal_goal = st.selectbox("5️⃣ Goal", MEAL_GOAL_OPTIONS)
 
 # Step 6 — Ingredients
-st.subheader("6️⃣ What ingredients do you have?")
 user_input = st.text_area(
-    "Enter ingredients (one per line)",
+    "6️⃣ What ingredients do you have?",
     placeholder="chicken\nrice\ngarlic\nonion",
     height=150
 )
