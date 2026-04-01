@@ -1,6 +1,503 @@
 {
   "recipes": [
     {
+      "id": "classic_cheeseburger",
+      "name": "Classic Cheeseburger",
+      "required": [
+        "beef",
+        "bread",
+        { "name": "melting cheese", "options": ["cheddar", "american cheese", "swiss", "provolone", "colby jack"] }
+      ],
+      "optional": ["lettuce", "tomato", "onion", "pickle", "ketchup", "mustard", "mayonnaise"],
+      "alternatives": {
+        "beef": ["turkey", "bison", "plant-based beef"],
+        "bread": ["bun", "sandwich bread", "lettuce wrap"],
+        "melting cheese": ["cheddar", "american cheese", "swiss", "provolone", "havarti"]
+      },
+      "cuisine": "American",
+      "meal_style": "Comfort Food",
+      "meal_type": "Dinner",
+      "protein": "Beef",
+      "skill_level": "Beginner",
+      "time_minutes": 25,
+      "quick_meal": true,
+      "high_protein": true,
+      "comfort_food": true,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": false,
+      "ingredient_access": ["Everyday Grocery", "Better Grocery / Specialty Section"],
+      "equipment": ["skillet"],
+      "questions": [
+        "Do you have buns or sandwich bread?",
+        "Do you want classic burger toppings?"
+      ],
+      "shopping_tips": [
+        "American cheese melts especially well.",
+        "Pickles add a nice acid contrast."
+      ],
+      "chef_upgrade": [
+        "Smash the burger on a hot skillet for more crust.",
+        "Toast the buns in butter.",
+        "Add caramelized onions."
+      ],
+      "advanced_shortcuts": [
+        "Use a quality burger sauce from the store."
+      ],
+      "advanced_homemade": [
+        "Make a quick burger sauce with mayo, ketchup, mustard, pickle, and paprika."
+      ],
+      "instructions": [
+        "Form the beef into patties and season with salt and pepper.",
+        "Cook in a skillet until browned and cooked to your liking.",
+        "Add cheese near the end so it melts.",
+        "Toast the bread or buns if you want.",
+        "Assemble with toppings and condiments."
+      ]
+    },
+    {
+      "id": "sheet_pan_chicken_veggies",
+      "name": "Sheet Pan Chicken and Veggies",
+      "required": ["chicken", "potato", "carrot"],
+      "optional": ["broccoli", "olive oil", "garlic", "paprika", "thyme"],
+      "alternatives": {
+        "chicken": ["turkey", "sausage", "tofu"],
+        "potato": ["sweet potato", "cauliflower"],
+        "carrot": ["broccoli", "green bean", "zucchini"]
+      },
+      "cuisine": "American",
+      "meal_style": "Quick & Easy",
+      "meal_type": "Dinner",
+      "protein": "Chicken",
+      "skill_level": "Beginner",
+      "time_minutes": 45,
+      "quick_meal": false,
+      "high_protein": true,
+      "comfort_food": true,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery", "Farmers Market / Butcher / Fishmonger"],
+      "equipment": ["sheet pan", "foil"],
+      "questions": [
+        "Do you have any extra roasting vegetables?",
+        "Do you want garlic or herbs for more flavor?"
+      ],
+      "shopping_tips": [
+        "Chicken thighs stay juicy.",
+        "Broccoli or green beans roast well too."
+      ],
+      "chef_upgrade": [
+        "Preheat the sheet pan for better browning.",
+        "Roast vegetables cut-side down.",
+        "Finish with lemon or herbs."
+      ],
+      "advanced_shortcuts": [
+        "Use pre-cut roasting vegetables."
+      ],
+      "advanced_homemade": [
+        "Make an herb oil with olive oil, garlic, parsley, and thyme."
+      ],
+      "instructions": [
+        "Heat the oven to 425°F.",
+        "Toss chicken, potato, and carrot with oil and seasonings.",
+        "Spread on a sheet pan.",
+        "Roast until the chicken is cooked and vegetables are tender."
+      ]
+    },
+    {
+      "id": "classic_beef_chili",
+      "name": "Classic Beef Chili",
+      "required": ["beef", "onion", "bean", "tomato"],
+      "optional": ["garlic", "cumin", "paprika", "chili flakes", "cheddar", "sour cream"],
+      "alternatives": {
+        "beef": ["turkey", "venison", "plant-based beef"],
+        "bean": ["black bean", "kidney bean", "pinto bean"],
+        "tomato": ["canned tomato", "tomato sauce", "tomato paste"]
+      },
+      "cuisine": "American",
+      "meal_style": "One-Pot Meals",
+      "meal_type": "Dinner",
+      "protein": "Beef",
+      "skill_level": "Beginner",
+      "time_minutes": 50,
+      "quick_meal": false,
+      "high_protein": true,
+      "comfort_food": true,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": false,
+      "ingredient_access": ["Everyday Grocery"],
+      "equipment": ["pot"],
+      "questions": [
+        "Do you have canned beans and tomatoes?",
+        "Do you want toppings like cheddar or sour cream?"
+      ],
+      "shopping_tips": [
+        "Ground beef is the fastest choice.",
+        "Canned beans make it easy."
+      ],
+      "chef_upgrade": [
+        "Brown the beef deeply.",
+        "Cook onions a bit longer.",
+        "Simmer longer for thicker texture."
+      ],
+      "advanced_shortcuts": [
+        "Use canned beans and canned tomatoes."
+      ],
+      "advanced_homemade": [
+        "Build your own chili blend with cumin, paprika, chili flakes, and garlic powder."
+      ],
+      "instructions": [
+        "Brown the beef with onion and garlic.",
+        "Add tomatoes, beans, and spices.",
+        "Simmer until thick and flavorful.",
+        "Top with cheddar or sour cream if available."
+      ]
+    },
+    {
+      "id": "simple_salmon_plate",
+      "name": "Simple Salmon Plate",
+      "required": ["salmon", "olive oil"],
+      "optional": ["lemon", "garlic", "green bean", "asparagus", "rice"],
+      "alternatives": {
+        "salmon": ["trout", "cod", "mahi mahi", "shrimp"],
+        "olive oil": ["avocado oil", "butter"],
+        "green bean": ["asparagus", "broccoli", "zucchini"]
+      },
+      "cuisine": "American",
+      "meal_style": "Seafood",
+      "meal_type": "Dinner",
+      "protein": "Salmon",
+      "skill_level": "Beginner",
+      "time_minutes": 25,
+      "quick_meal": true,
+      "high_protein": true,
+      "comfort_food": false,
+      "protein_packed": true,
+      "low_carb": true,
+      "keto": true,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery", "Farmers Market / Butcher / Fishmonger"],
+      "equipment": ["skillet"],
+      "questions": [
+        "Do you want a vegetable side?",
+        "Do you want lemon or garlic with it?"
+      ],
+      "shopping_tips": [
+        "Asparagus is an easy side.",
+        "Frozen salmon can work too."
+      ],
+      "chef_upgrade": [
+        "Dry the salmon well before cooking.",
+        "Finish with lemon zest and herbs."
+      ],
+      "advanced_shortcuts": [
+        "Use a good seasoning blend."
+      ],
+      "advanced_homemade": [
+        "Make a lemon herb butter to spoon over the salmon."
+      ],
+      "instructions": [
+        "Season the salmon with salt and pepper.",
+        "Cook in a hot skillet with olive oil.",
+        "Serve with optional vegetables or rice."
+      ]
+    },
+    {
+      "id": "pork_chops_pan_sauce",
+      "name": "Pork Chops with Quick Pan Sauce",
+      "required": ["pork chop", "butter"],
+      "optional": ["garlic", "broth", "mustard", "thyme"],
+      "alternatives": {
+        "pork chop": ["chicken", "turkey cutlet", "pork loin"],
+        "butter": ["olive oil", "ghee"],
+        "broth": ["white wine", "stock", "water"]
+      },
+      "cuisine": "American",
+      "meal_style": "Comfort Food",
+      "meal_type": "Dinner",
+      "protein": "Pork",
+      "skill_level": "Intermediate",
+      "time_minutes": 30,
+      "quick_meal": true,
+      "high_protein": true,
+      "comfort_food": true,
+      "protein_packed": true,
+      "low_carb": true,
+      "keto": true,
+      "glp1_friendly": false,
+      "ingredient_access": ["Everyday Grocery", "Farmers Market / Butcher / Fishmonger"],
+      "equipment": ["skillet"],
+      "questions": [
+        "Do you want a quick sauce or just seasoned chops?",
+        "Do you have mustard or broth?"
+      ],
+      "shopping_tips": [
+        "Bone-in chops stay juicy."
+      ],
+      "chef_upgrade": [
+        "Sear the chops hard before lowering heat.",
+        "Rest the meat before slicing."
+      ],
+      "advanced_shortcuts": [
+        "Use a good grainy mustard."
+      ],
+      "advanced_homemade": [
+        "Deglaze the pan with broth and whisk in butter and mustard."
+      ],
+      "instructions": [
+        "Season the pork chops.",
+        "Sear in a skillet until browned and cooked through.",
+        "Make a quick pan sauce with broth, butter, and mustard if desired."
+      ]
+    },
+    {
+      "id": "bbq_ribs_style",
+      "name": "BBQ Ribs Style",
+      "required": ["ribs", "barbecue sauce"],
+      "optional": ["paprika", "garlic powder", "foil"],
+      "alternatives": {
+        "ribs": ["baby back ribs", "spare ribs", "short rib"],
+        "barbecue sauce": ["hot sauce", "ketchup", "mustard-based barbecue sauce"],
+        "foil": ["parchment paper"]
+      },
+      "cuisine": "BBQ",
+      "meal_style": "BBQ & Grilled",
+      "meal_type": "Dinner",
+      "protein": "Pork",
+      "skill_level": "Intermediate",
+      "time_minutes": 120,
+      "quick_meal": false,
+      "high_protein": true,
+      "comfort_food": true,
+      "protein_packed": true,
+      "low_carb": true,
+      "keto": false,
+      "glp1_friendly": false,
+      "ingredient_access": ["Everyday Grocery", "Better Grocery / Specialty Section"],
+      "equipment": ["sheet pan", "foil"],
+      "questions": [
+        "Do you have foil?",
+        "Do you want dry rub plus sauce?"
+      ],
+      "shopping_tips": [
+        "Baby back ribs are easier for beginners."
+      ],
+      "chef_upgrade": [
+        "Season the ribs the night before.",
+        "Finish uncovered for better glaze."
+      ],
+      "advanced_shortcuts": [
+        "Use a good bottled barbecue sauce."
+      ],
+      "advanced_homemade": [
+        "Make a dry rub with paprika, garlic powder, salt, pepper, and brown sugar."
+      ],
+      "instructions": [
+        "Season the ribs.",
+        "Wrap and cook until tender.",
+        "Brush with barbecue sauce.",
+        "Finish uncovered until sticky."
+      ]
+    },
+    {
+      "id": "turkey_club_style",
+      "name": "Turkey Club Style Sandwich",
+      "required": ["deli turkey", "bread"],
+      "optional": ["bacon", "lettuce", "tomato", "mayonnaise", "cheese"],
+      "alternatives": {
+        "deli turkey": ["deli ham", "roast beef", "rotisserie chicken"],
+        "bread": ["toast", "wrap", "lettuce wrap"],
+        "cheese": ["swiss", "provolone", "cheddar", "havarti"]
+      },
+      "cuisine": "American",
+      "meal_style": "Sandwiches & Wraps",
+      "meal_type": "Lunch",
+      "protein": "Turkey",
+      "skill_level": "Beginner",
+      "time_minutes": 10,
+      "quick_meal": true,
+      "high_protein": true,
+      "comfort_food": true,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery", "Better Grocery / Specialty Section"],
+      "equipment": ["skillet"],
+      "questions": [
+        "Do you want bacon or keep it simple?",
+        "Do you want lettuce and tomato?"
+      ],
+      "shopping_tips": [
+        "A sharper cheese works well here."
+      ],
+      "chef_upgrade": [
+        "Toast the bread.",
+        "Season tomato slices lightly."
+      ],
+      "advanced_shortcuts": [
+        "Use a better deli turkey or rotisserie chicken."
+      ],
+      "advanced_homemade": [
+        "Make a quick herb mayo with mayo, mustard, and herbs."
+      ],
+      "instructions": [
+        "Toast the bread if desired.",
+        "Layer turkey and optional fillings.",
+        "Cut and serve."
+      ]
+    },
+    {
+      "id": "pepperoni_flatbread",
+      "name": "Pepperoni Flatbread",
+      "required": ["bread", "tomato sauce", "pepperoni"],
+      "optional": ["mozzarella", "parmesan", "italian seasoning"],
+      "alternatives": {
+        "bread": ["naan", "flatbread", "french bread"],
+        "pepperoni": ["salami", "sausage", "prosciutto"],
+        "tomato sauce": ["pizza sauce", "tomato paste", "marinara"]
+      },
+      "cuisine": "Italian",
+      "meal_style": "Quick & Easy",
+      "meal_type": "Lunch",
+      "protein": "Pepperoni",
+      "skill_level": "Beginner",
+      "time_minutes": 15,
+      "quick_meal": true,
+      "high_protein": false,
+      "comfort_food": true,
+      "protein_packed": false,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": false,
+      "ingredient_access": ["Everyday Grocery"],
+      "equipment": ["sheet pan"],
+      "questions": [
+        "Do you have a melty cheese?",
+        "Do you want more of a pizza feel or a quick snack?"
+      ],
+      "shopping_tips": [
+        "Naan works especially well."
+      ],
+      "chef_upgrade": [
+        "Broil briefly at the end.",
+        "Finish with oregano or basil."
+      ],
+      "advanced_shortcuts": [
+        "Use naan or flatbread."
+      ],
+      "advanced_homemade": [
+        "Mix garlic and olive oil into the sauce for more flavor."
+      ],
+      "instructions": [
+        "Spread sauce on bread or flatbread.",
+        "Add pepperoni and cheese if using.",
+        "Bake until hot and crisp."
+      ]
+    },
+    {
+      "id": "pasta_aglio_olio",
+      "name": "Pasta with Garlic and Olive Oil",
+      "required": ["pasta", "garlic", "olive oil"],
+      "optional": ["parmesan", "red pepper flakes", "lemon", "parsley"],
+      "alternatives": {
+        "pasta": ["spaghetti", "penne", "linguine", "fettuccine"],
+        "olive oil": ["butter", "avocado oil"],
+        "parmesan": ["pecorino", "asiago", "romano"]
+      },
+      "cuisine": "Italian",
+      "meal_style": "Pasta Dishes",
+      "meal_type": "Dinner",
+      "protein": "None",
+      "skill_level": "Beginner",
+      "time_minutes": 20,
+      "quick_meal": true,
+      "high_protein": false,
+      "comfort_food": true,
+      "protein_packed": false,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": false,
+      "ingredient_access": ["Everyday Grocery", "Better Grocery / Specialty Section"],
+      "equipment": ["pot"],
+      "questions": [
+        "Do you have parmesan or herbs?",
+        "Do you want a little heat?"
+      ],
+      "shopping_tips": [
+        "Fresh garlic matters here."
+      ],
+      "chef_upgrade": [
+        "Use pasta water to emulsify the sauce.",
+        "Finish with lemon zest."
+      ],
+      "advanced_shortcuts": [
+        "Use good olive oil and parmesan."
+      ],
+      "advanced_homemade": [
+        "Toast breadcrumbs in olive oil for a crunchy topping."
+      ],
+      "instructions": [
+        "Cook the pasta.",
+        "Gently sauté the garlic in olive oil.",
+        "Toss with pasta and a little pasta water.",
+        "Finish with optional toppings."
+      ]
+    },
+    {
+      "id": "greek_salad",
+      "name": "Greek Salad",
+      "required": ["cucumber", "tomato", { "name": "greek cheese", "options": ["feta", "halloumi"] }],
+      "optional": ["red onion", "olive oil", "vinegar", "olive", "oregano"],
+      "alternatives": {
+        "greek cheese": ["feta", "halloumi", "goat cheese"],
+        "cucumber": ["romaine", "greens"],
+        "olive oil": ["avocado oil"]
+      },
+      "cuisine": "Greek",
+      "meal_style": "Salads & Bowls",
+      "meal_type": "Lunch",
+      "protein": "Cheese",
+      "skill_level": "Beginner",
+      "time_minutes": 15,
+      "quick_meal": true,
+      "high_protein": false,
+      "comfort_food": false,
+      "protein_packed": false,
+      "low_carb": true,
+      "keto": true,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery", "Better Grocery / Specialty Section"],
+      "equipment": [],
+      "questions": [
+        "Do you have olives or red onion?",
+        "Do you want a simple oil and vinegar dressing?"
+      ],
+      "shopping_tips": [
+        "Feta is the key flavor."
+      ],
+      "chef_upgrade": [
+        "Salt the tomatoes lightly first.",
+        "Finish with oregano and good olive oil."
+      ],
+      "advanced_shortcuts": [
+        "Use a good feta block instead of crumbles."
+      ],
+      "advanced_homemade": [
+        "Make a simple dressing with olive oil, vinegar, oregano, and black pepper."
+      ],
+      "instructions": [
+        "Chop cucumber and tomato.",
+        "Add feta and optional red onion or olives.",
+        "Dress lightly and serve."
+      ]
+    },
+    {
       "id": "chicken_tacos",
       "name": "Chicken Tacos",
       "required": [
@@ -9,370 +506,98 @@
         "onion",
         "garlic"
       ],
-      "optional": [
-        "lime",
-        "cumin",
-        "paprika",
-        "avocado",
-        "cilantro",
-        { "name": "mexican cheese", "options": ["cheddar", "monterey jack", "cotija", "queso fresco", "pepper jack", "colby jack"] }
-      ],
+      "optional": ["lime", "cumin", "paprika", "avocado", "cilantro", { "name": "mexican cheese", "options": ["cheddar", "monterey jack", "cotija", "queso fresco"] }],
+      "alternatives": {
+        "chicken": ["beef", "turkey", "pork", "tofu"],
+        "wrap": ["corn tortilla", "flour tortilla", "lettuce wrap"],
+        "mexican cheese": ["cheddar", "monterey jack", "cotija", "queso fresco", "pepper jack"]
+      },
       "cuisine": "Mexican",
+      "meal_style": "Street Food Style",
       "meal_type": "Dinner",
       "protein": "Chicken",
       "skill_level": "Beginner",
       "time_minutes": 25,
-      "servings": 2,
       "quick_meal": true,
-      "vegetarian": false,
       "high_protein": true,
+      "comfort_food": true,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery"],
+      "equipment": ["skillet"],
       "questions": [
-        "Do you have corn tortillas, flour tortillas, or lettuce for wraps?",
-        "Do you have any taco-friendly cheese?",
-        "Do you want toppings like lime, avocado, or cilantro?"
+        "Corn, flour, or lettuce wrap?",
+        "Do you want avocado or lime?"
       ],
       "shopping_tips": [
-        "A lime and cilantro brighten this quickly.",
-        "Any taco cheese blend works well.",
-        "A jar of salsa is an easy shortcut."
+        "Cotija adds a great finish."
       ],
       "chef_upgrade": [
-        "Sear the chicken harder for deeper browning.",
-        "Warm tortillas in a dry skillet instead of the microwave.",
-        "Finish with lime and a pinch of flaky salt."
+        "Char tortillas in a dry pan.",
+        "Marinate the chicken before cooking."
+      ],
+      "advanced_shortcuts": [
+        "Use rotisserie chicken with taco seasoning."
+      ],
+      "advanced_homemade": [
+        "Make quick pickled onions with vinegar and salt."
       ],
       "instructions": [
-        "Cook the chicken with onion and garlic until fully done.",
-        "Season with cumin and paprika if you have them.",
-        "Warm tortillas or prepare lettuce wraps.",
-        "Fill and top with cheese, avocado, cilantro, or lime if available."
+        "Cook chicken with onion and garlic.",
+        "Season with cumin and paprika if available.",
+        "Warm tortillas or prep lettuce wraps.",
+        "Assemble with optional toppings."
       ]
     },
     {
-      "id": "beef_tacos",
-      "name": "Beef Tacos",
-      "required": [
-        "beef",
-        { "name": "wrap", "options": ["corn tortilla", "flour tortilla", "lettuce wrap"] },
-        "onion",
-        "garlic"
-      ],
-      "optional": [
-        "lime",
-        "cumin",
-        "paprika",
-        "avocado",
-        "cilantro",
-        { "name": "mexican cheese", "options": ["cheddar", "monterey jack", "cotija", "queso fresco", "pepper jack", "colby jack"] }
-      ],
-      "cuisine": "Mexican",
+      "id": "hatch_green_chile_stew",
+      "name": "Hatch Green Chile Stew Style",
+      "required": ["pork", "potato", "hatch green chile"],
+      "optional": ["onion", "garlic", "broth", "cumin"],
+      "alternatives": {
+        "pork": ["chicken", "turkey"],
+        "potato": ["sweet potato", "turnip"],
+        "hatch green chile": ["anaheim chile", "poblano", "green chile"]
+      },
+      "cuisine": "New Mexican",
+      "meal_style": "Soups & Stews",
       "meal_type": "Dinner",
-      "protein": "Beef",
-      "skill_level": "Beginner",
-      "time_minutes": 25,
-      "servings": 2,
-      "quick_meal": true,
-      "vegetarian": false,
-      "high_protein": true,
-      "questions": [
-        "Do you have tortillas or lettuce wraps?",
-        "Do you want cheese on top?",
-        "Do you have lime or hot sauce for finishing?"
-      ],
-      "shopping_tips": [
-        "Cumin and paprika help a lot.",
-        "Bagged shredded lettuce is an easy topping.",
-        "Sour cream works well too."
-      ],
-      "chef_upgrade": [
-        "Brown the beef deeply before stirring.",
-        "Let the onion soften well before finishing.",
-        "Toast tortillas in a skillet."
-      ],
-      "instructions": [
-        "Brown the beef with onion and garlic.",
-        "Add cumin and paprika if available and cook for another minute.",
-        "Warm tortillas or prepare lettuce wraps.",
-        "Assemble and add toppings you have."
-      ]
-    },
-    {
-      "id": "chicken_quesadilla",
-      "name": "Chicken Quesadilla",
-      "required": [
-        "chicken",
-        { "name": "wrap", "options": ["corn tortilla", "flour tortilla"] },
-        { "name": "melting cheese", "options": ["cheddar", "monterey jack", "mozzarella", "pepper jack", "colby jack", "american cheese"] }
-      ],
-      "optional": [
-        "onion",
-        "bell pepper",
-        "sour cream",
-        "avocado"
-      ],
-      "cuisine": "Mexican",
-      "meal_type": "Lunch",
-      "protein": "Chicken",
-      "skill_level": "Beginner",
-      "time_minutes": 20,
-      "servings": 2,
-      "quick_meal": true,
-      "vegetarian": false,
-      "high_protein": true,
-      "questions": [
-        "Do you have a melty cheese on hand?",
-        "Would you add onion or peppers?",
-        "Do you want sour cream or avocado on the side?"
-      ],
-      "shopping_tips": [
-        "A melty cheese is the key piece.",
-        "Bell pepper adds sweetness.",
-        "Salsa makes it feel more complete."
-      ],
-      "chef_upgrade": [
-        "Toast the tortilla in butter for better color.",
-        "Cook the filling separately so the tortilla stays crisp.",
-        "Rest for a minute before slicing."
-      ],
-      "instructions": [
-        "Cook the chicken and any vegetables.",
-        "Place a tortilla in a skillet and add cheese plus chicken mixture.",
-        "Fold and cook until golden and melty.",
-        "Serve with sour cream or avocado if available."
-      ]
-    },
-    {
-      "id": "pasta_garlic_olive_oil",
-      "name": "Pasta with Garlic and Olive Oil",
-      "required": ["pasta", "garlic", "olive oil"],
-      "optional": [
-        "red pepper flakes",
-        { "name": "italian cheese", "options": ["parmesan", "pecorino", "asiago", "romano", "mozzarella"] },
-        "lemon",
-        "parsley"
-      ],
-      "cuisine": "Italian",
-      "meal_type": "Dinner",
-      "protein": "None",
-      "skill_level": "Beginner",
-      "time_minutes": 20,
-      "servings": 2,
-      "quick_meal": true,
-      "vegetarian": true,
-      "high_protein": false,
-      "questions": [
-        "Do you have any pasta shape at all?",
-        "Do you have parmesan or another cheese?",
-        "Would you like some heat from chili flakes?"
-      ],
-      "shopping_tips": [
-        "Parmesan helps a lot.",
-        "A lemon adds freshness.",
-        "Parsley is optional but nice."
-      ],
-      "chef_upgrade": [
-        "Cook garlic gently so it does not burn.",
-        "Use a splash of pasta water to emulsify.",
-        "Finish with lemon zest if available."
-      ],
-      "instructions": [
-        "Cook pasta until al dente.",
-        "Gently sauté garlic in olive oil.",
-        "Toss pasta with the garlic oil and a little pasta water if needed.",
-        "Finish with chili flakes, cheese, lemon, or parsley if available."
-      ]
-    },
-    {
-      "id": "sausage_tomato_pasta",
-      "name": "Sausage Tomato Pasta",
-      "required": ["sausage", "pasta", "tomato", "onion", "garlic"],
-      "optional": [
-        "olive oil",
-        { "name": "italian cheese", "options": ["parmesan", "pecorino", "asiago", "romano", "mozzarella"] },
-        "basil",
-        "red pepper flakes"
-      ],
-      "cuisine": "Italian",
-      "meal_type": "Dinner",
-      "protein": "Sausage",
+      "protein": "Pork",
       "skill_level": "Intermediate",
-      "time_minutes": 40,
-      "servings": 4,
+      "time_minutes": 60,
       "quick_meal": false,
-      "vegetarian": false,
       "high_protein": true,
+      "comfort_food": true,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": false,
+      "ingredient_access": ["Better Grocery / Specialty Section", "International Market / Specialty Shop"],
+      "equipment": ["pot"],
       "questions": [
-        "Do you have fresh tomato or canned tomato?",
-        "Do you have an Italian-style cheese?",
-        "Would you like basil or chili flakes?"
+        "Do you have broth?",
+        "Are you using fresh, frozen, or jarred green chile?"
       ],
       "shopping_tips": [
-        "Crushed or canned tomatoes also work.",
-        "Italian sausage is easiest.",
-        "A wedge of parmesan lasts a long time."
+        "Jarred hatch chiles make this much easier."
       ],
       "chef_upgrade": [
-        "Brown the sausage until you build fond.",
-        "Reduce the sauce slightly before adding pasta.",
-        "Add basil at the end."
+        "Roast the chiles first if using fresh ones.",
+        "Brown the pork before simmering."
+      ],
+      "advanced_shortcuts": [
+        "Use jarred hatch green chile."
+      ],
+      "advanced_homemade": [
+        "Build the broth with onion, garlic, and a little cumin."
       ],
       "instructions": [
-        "Cook sausage and break it up in a pan.",
-        "Add onion and garlic and cook until softened.",
-        "Add tomato and simmer into a quick sauce.",
-        "Toss with cooked pasta and finish with cheese or basil if you have them."
-      ]
-    },
-    {
-      "id": "mushroom_pasta",
-      "name": "Mushroom Pasta",
-      "required": ["pasta", "mushroom", "garlic"],
-      "optional": [
-        "butter",
-        { "name": "italian cheese", "options": ["parmesan", "pecorino", "asiago", "romano", "mozzarella"] },
-        "thyme"
-      ],
-      "cuisine": "Italian",
-      "meal_type": "Dinner",
-      "protein": "None",
-      "skill_level": "Beginner",
-      "time_minutes": 25,
-      "servings": 2,
-      "quick_meal": true,
-      "vegetarian": true,
-      "high_protein": false,
-      "questions": [
-        "Do you have butter or just oil?",
-        "Do you have a cheese to finish it?",
-        "Would you like thyme or parsley?"
-      ],
-      "shopping_tips": [
-        "Cremini mushrooms work great.",
-        "Parmesan adds savoriness.",
-        "A little butter helps the sauce."
-      ],
-      "chef_upgrade": [
-        "Let mushrooms brown instead of steaming.",
-        "Salt mushrooms after they start to color.",
-        "Use a little pasta water for silkier texture."
-      ],
-      "instructions": [
-        "Cook the pasta.",
-        "Sauté mushrooms and garlic in butter or oil until browned.",
-        "Toss with pasta.",
-        "Finish with cheese and thyme if available."
-      ]
-    },
-    {
-      "id": "greek_salad",
-      "name": "Greek Salad",
-      "required": [
-        "cucumber",
-        "tomato",
-        { "name": "greek cheese", "options": ["feta"] }
-      ],
-      "optional": ["red onion", "olive oil", "vinegar", "olive"],
-      "cuisine": "Greek",
-      "meal_type": "Lunch",
-      "protein": "Cheese",
-      "skill_level": "Beginner",
-      "time_minutes": 15,
-      "servings": 2,
-      "quick_meal": true,
-      "vegetarian": true,
-      "high_protein": false,
-      "questions": [
-        "Do you have feta?",
-        "Do you have olives or red onion?",
-        "Would you like a simple oil and vinegar dressing?"
-      ],
-      "shopping_tips": [
-        "Feta is the key ingredient.",
-        "English cucumber works especially well.",
-        "Red onion adds bite."
-      ],
-      "chef_upgrade": [
-        "Salt tomatoes lightly before mixing.",
-        "Use good olive oil if you have one.",
-        "Add oregano if available."
-      ],
-      "instructions": [
-        "Chop cucumber and tomato.",
-        "Add feta and red onion if using.",
-        "Dress with olive oil and vinegar.",
-        "Top with olives if available."
-      ]
-    },
-    {
-      "id": "chicken_curry",
-      "name": "Chicken Curry",
-      "required": ["chicken", "onion", "garlic"],
-      "optional": ["ginger", "tomato", "rice", "cumin", "turmeric", "coriander"],
-      "cuisine": "Indian",
-      "meal_type": "Dinner",
-      "protein": "Chicken",
-      "skill_level": "Intermediate",
-      "time_minutes": 50,
-      "servings": 4,
-      "quick_meal": false,
-      "vegetarian": false,
-      "high_protein": true,
-      "questions": [
-        "Do you have ginger and warm spices?",
-        "Do you want rice with it?",
-        "Do you have tomato or tomato paste?"
-      ],
-      "shopping_tips": [
-        "A small spice blend goes a long way.",
-        "Rice is the easiest pairing.",
-        "Canned tomatoes work well."
-      ],
-      "chef_upgrade": [
-        "Cook onions longer for deeper flavor.",
-        "Toast spices briefly before adding liquid.",
-        "Let the curry rest before serving."
-      ],
-      "instructions": [
-        "Cook onion and garlic until soft.",
-        "Add chicken and brown lightly.",
-        "Add spices and tomato if you have them and simmer until chicken is cooked through.",
-        "Serve over rice if available."
-      ]
-    },
-    {
-      "id": "chana_masala_style",
-      "name": "Chana Masala Style",
-      "required": ["chickpea", "tomato", "onion"],
-      "optional": ["garlic", "ginger", "cumin", "coriander", "turmeric", "rice"],
-      "cuisine": "Indian",
-      "meal_type": "Dinner",
-      "protein": "Chickpeas",
-      "skill_level": "Intermediate",
-      "time_minutes": 40,
-      "servings": 4,
-      "quick_meal": false,
-      "vegetarian": true,
-      "high_protein": false,
-      "questions": [
-        "Do you have canned chickpeas or cooked ones?",
-        "Do you want to serve this with rice?",
-        "Do you have garlic and ginger?"
-      ],
-      "shopping_tips": [
-        "Canned chickpeas are easiest.",
-        "Cumin is highly recommended.",
-        "Rice makes it a fuller meal."
-      ],
-      "chef_upgrade": [
-        "Cook onion until deeply soft.",
-        "Mash a few chickpeas into the sauce.",
-        "Finish with cilantro if you have it."
-      ],
-      "instructions": [
-        "Cook onion until softened.",
-        "Add tomato and spices if available.",
-        "Stir in chickpeas and simmer until flavorful.",
-        "Serve with rice if you have it."
+        "Brown the pork if desired.",
+        "Cook onion and garlic.",
+        "Add potato, chile, and broth.",
+        "Simmer until tender."
       ]
     },
     {
@@ -380,143 +605,676 @@
       "name": "Chicken Stir-Fry",
       "required": ["chicken", "bell pepper", "onion", "soy sauce"],
       "optional": ["garlic", "ginger", "rice", "broccoli", "sesame oil"],
+      "alternatives": {
+        "chicken": ["beef", "shrimp", "tofu", "turkey"],
+        "bell pepper": ["broccoli", "zucchini", "carrot"],
+        "soy sauce": ["shoyu", "tamari", "oyster sauce"]
+      },
       "cuisine": "Chinese",
+      "meal_style": "Rice Dishes",
       "meal_type": "Dinner",
       "protein": "Chicken",
       "skill_level": "Beginner",
       "time_minutes": 25,
-      "servings": 3,
       "quick_meal": true,
-      "vegetarian": false,
       "high_protein": true,
+      "comfort_food": false,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery", "International Market / Specialty Shop"],
+      "equipment": ["skillet"],
       "questions": [
-        "Do you have rice to serve with it?",
-        "Do you have garlic or ginger?",
-        "Would you like broccoli or another quick vegetable?"
+        "Do you want rice with it?",
+        "Do you have broccoli or frozen vegetables?"
       ],
       "shopping_tips": [
-        "Frozen broccoli is a good backup.",
-        "Sesame oil adds a restaurant-style finish.",
-        "Jasmine rice pairs nicely."
+        "Sesame oil adds restaurant-style aroma."
       ],
       "chef_upgrade": [
-        "Cook chicken in batches so it browns.",
-        "Add sesame oil at the end.",
-        "Use very high heat for vegetables."
+        "Cook the chicken in batches.",
+        "Finish with sesame oil."
+      ],
+      "advanced_shortcuts": [
+        "Use frozen stir-fry vegetables."
+      ],
+      "advanced_homemade": [
+        "Make a quick sauce with soy sauce, ginger, garlic, and a little honey."
       ],
       "instructions": [
-        "Cook the chicken in a hot pan.",
-        "Add onion and bell pepper and stir-fry until crisp tender.",
-        "Add soy sauce plus garlic or ginger if available.",
-        "Serve with rice or finish with sesame oil if you have it."
+        "Cook chicken in a hot pan.",
+        "Add vegetables and stir-fry.",
+        "Season with soy sauce and optional aromatics.",
+        "Serve with rice if desired."
       ]
     },
     {
-      "id": "vegetable_fried_rice",
-      "name": "Vegetable Fried Rice",
-      "required": ["rice", "egg", "soy sauce"],
-      "optional": ["carrot", "green onion", "peas", "oil"],
-      "cuisine": "Chinese",
-      "meal_type": "Dinner",
-      "protein": "Egg",
-      "skill_level": "Beginner",
-      "time_minutes": 20,
-      "servings": 2,
-      "quick_meal": true,
-      "vegetarian": true,
-      "high_protein": false,
-      "questions": [
-        "Do you have leftover rice?",
-        "Do you have peas, carrots, or green onion?",
-        "Do you want to add another protein?"
-      ],
-      "shopping_tips": [
-        "Day-old rice works best.",
-        "Frozen peas and carrots are perfect here.",
-        "Green onion adds a nice finish."
-      ],
-      "chef_upgrade": [
-        "Use cold rice so it stays separate.",
-        "Cook egg first, then add it back later.",
-        "Let the rice sit briefly in the pan for better texture."
-      ],
-      "instructions": [
-        "Scramble the egg in a hot pan and remove.",
-        "Cook vegetables in a little oil if using.",
-        "Add rice and soy sauce and stir-fry.",
-        "Return the egg to the pan and finish with green onion if available."
-      ]
-    },
-    {
-      "id": "thai_basil_chicken_style",
-      "name": "Thai Basil Chicken Style",
-      "required": ["chicken", "garlic", "soy sauce"],
-      "optional": ["basil", "rice", "chili flakes", "bell pepper"],
-      "cuisine": "Thai",
-      "meal_type": "Dinner",
-      "protein": "Chicken",
-      "skill_level": "Intermediate",
-      "time_minutes": 30,
-      "servings": 3,
-      "quick_meal": true,
-      "vegetarian": false,
-      "high_protein": true,
-      "questions": [
-        "Do you have basil or another fresh herb?",
-        "Do you want to serve it with rice?",
-        "Do you want it spicy?"
-      ],
-      "shopping_tips": [
-        "Fresh basil helps a lot.",
-        "Rice is the easiest base.",
-        "A chili sauce works too."
-      ],
-      "chef_upgrade": [
-        "Cook chicken hard for crispy edges.",
-        "Add basil at the very end.",
-        "Balance with a touch of sugar if needed."
-      ],
-      "instructions": [
-        "Cook chicken with garlic in a hot pan.",
-        "Add soy sauce and chili flakes if you like heat.",
-        "Stir in basil and bell pepper if available.",
-        "Serve over rice."
-      ]
-    },
-    {
-      "id": "teriyaki_salmon_bowl_style",
+      "id": "teriyaki_salmon_bowl",
       "name": "Teriyaki Salmon Bowl Style",
       "required": ["salmon", "rice", "soy sauce"],
-      "optional": ["green onion", "avocado", "cucumber", "sesame seeds"],
+      "optional": ["green onion", "avocado", "cucumber", "sesame seed", "honey"],
+      "alternatives": {
+        "salmon": ["trout", "shrimp", "tuna"],
+        "rice": ["cauliflower rice", "quinoa"],
+        "soy sauce": ["teriyaki sauce", "shoyu", "tamari"]
+      },
       "cuisine": "Japanese",
+      "meal_style": "Rice Dishes",
       "meal_type": "Dinner",
       "protein": "Salmon",
       "skill_level": "Intermediate",
       "time_minutes": 35,
-      "servings": 2,
       "quick_meal": false,
-      "vegetarian": false,
       "high_protein": true,
+      "comfort_food": false,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery", "Better Grocery / Specialty Section"],
+      "equipment": ["skillet", "pot"],
       "questions": [
-        "Do you have rice ready or do you need to cook it?",
-        "Would you like toppings like cucumber or avocado?",
-        "Do you want this sweeter or more savory?"
+        "Do you want avocado or cucumber on top?",
+        "Do you already have rice ready?"
       ],
       "shopping_tips": [
-        "Frozen salmon fillets are convenient.",
-        "Cucumber adds freshness.",
-        "Sesame seeds are optional but nice."
+        "Frozen salmon works well."
       ],
       "chef_upgrade": [
-        "Cook salmon just to medium for better texture.",
-        "Reduce the soy glaze slightly.",
-        "Top with green onion right before serving."
+        "Reduce the glaze slightly.",
+        "Top with toasted sesame seeds."
+      ],
+      "advanced_shortcuts": [
+        "Use bottled teriyaki sauce."
+      ],
+      "advanced_homemade": [
+        "Make a quick glaze with soy sauce, honey, garlic, and ginger."
       ],
       "instructions": [
+        "Cook the rice.",
         "Cook the salmon until just done.",
-        "Season or glaze lightly with soy sauce.",
-        "Serve over rice.",
-        "Top with cucumber, avocado, green onion, or sesame seeds if available."
+        "Glaze with soy or teriyaki-style sauce.",
+        "Serve in a bowl with toppings."
+      ]
+    },
+    {
+      "id": "chicken_adobo",
+      "name": "Chicken Adobo",
+      "required": ["chicken", "soy sauce", "vinegar"],
+      "optional": ["garlic", "rice", "black pepper", "bay leaf"],
+      "alternatives": {
+        "chicken": ["pork", "turkey"],
+        "soy sauce": ["shoyu", "tamari"],
+        "vinegar": ["white vinegar", "apple cider vinegar", "rice vinegar"]
+      },
+      "cuisine": "Filipino",
+      "meal_style": "Rice Dishes",
+      "meal_type": "Dinner",
+      "protein": "Chicken",
+      "skill_level": "Intermediate",
+      "time_minutes": 45,
+      "quick_meal": false,
+      "high_protein": true,
+      "comfort_food": true,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery"],
+      "equipment": ["pot"],
+      "questions": [
+        "Do you want rice with it?",
+        "Do you have garlic or bay leaf?"
+      ],
+      "shopping_tips": [
+        "Chicken thighs work especially well."
+      ],
+      "chef_upgrade": [
+        "Brown the chicken first.",
+        "Reduce the sauce until glossy."
+      ],
+      "advanced_shortcuts": [
+        "Use regular soy sauce and white vinegar."
+      ],
+      "advanced_homemade": [
+        "Add peppercorns and bay leaf for fuller adobo flavor."
+      ],
+      "instructions": [
+        "Combine chicken with soy sauce and vinegar.",
+        "Add optional garlic and bay leaf.",
+        "Simmer until cooked through.",
+        "Reduce the sauce slightly and serve."
+      ]
+    },
+    {
+      "id": "huli_huli_chicken",
+      "name": "Huli Huli Chicken Style",
+      "required": ["chicken", "huli huli"],
+      "optional": ["pineapple", "rice", "green onion", "sesame seed"],
+      "alternatives": {
+        "chicken": ["pork", "shrimp", "tofu"],
+        "huli huli": ["teriyaki sauce", "soy sauce", "shoyu"],
+        "pineapple": ["mango", "orange"]
+      },
+      "cuisine": "Hawaiian",
+      "meal_style": "BBQ & Grilled",
+      "meal_type": "Dinner",
+      "protein": "Chicken",
+      "skill_level": "Intermediate",
+      "time_minutes": 35,
+      "quick_meal": false,
+      "high_protein": true,
+      "comfort_food": true,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": false,
+      "ingredient_access": ["Better Grocery / Specialty Section", "International Market / Specialty Shop"],
+      "equipment": ["skillet"],
+      "questions": [
+        "Do you want pineapple with it?",
+        "Do you want rice on the side?"
+      ],
+      "shopping_tips": [
+        "Pineapple pairs naturally here."
+      ],
+      "chef_upgrade": [
+        "Char the chicken for more flavor.",
+        "Grill pineapple if using."
+      ],
+      "advanced_shortcuts": [
+        "Use bottled huli huli or teriyaki-style sauce."
+      ],
+      "advanced_homemade": [
+        "Mix soy sauce, pineapple juice, brown sugar, garlic, and ginger."
+      ],
+      "instructions": [
+        "Coat the chicken with huli huli sauce.",
+        "Cook until browned and done.",
+        "Serve with optional pineapple and rice."
+      ]
+    },
+    {
+      "id": "lentil_stew_ethiopian_style",
+      "name": "Ethiopian Lentil Stew Style",
+      "required": ["lentil", "onion", "garlic"],
+      "optional": ["ginger", "tomato", "berbere", "rice"],
+      "alternatives": {
+        "lentil": ["split pea", "chickpea"],
+        "berbere": ["paprika", "curry powder", "cumin plus chili flakes"],
+        "rice": ["naan", "bread", "quinoa"]
+      },
+      "cuisine": "Ethiopian",
+      "meal_style": "Soups & Stews",
+      "meal_type": "Dinner",
+      "protein": "Lentils",
+      "skill_level": "Intermediate",
+      "time_minutes": 40,
+      "quick_meal": false,
+      "high_protein": true,
+      "comfort_food": true,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery", "International Market / Specialty Shop"],
+      "equipment": ["pot"],
+      "questions": [
+        "Do you want rice with it?",
+        "Do you have ginger or berbere?"
+      ],
+      "shopping_tips": [
+        "Red lentils cook fastest."
+      ],
+      "chef_upgrade": [
+        "Toast the spices first.",
+        "Cook onions longer for depth."
+      ],
+      "advanced_shortcuts": [
+        "Use curry powder or paprika if you do not have berbere."
+      ],
+      "advanced_homemade": [
+        "Finish with butter or oil for richness."
+      ],
+      "instructions": [
+        "Cook onion and garlic.",
+        "Add lentils and liquid.",
+        "Add optional tomato and spices.",
+        "Simmer until tender."
+      ]
+    },
+    {
+      "id": "red_beans_rice_style",
+      "name": "Red Beans and Rice Style",
+      "required": ["kidney bean", "rice", "onion"],
+      "optional": ["sausage", "garlic", "bell pepper", "paprika"],
+      "alternatives": {
+        "kidney bean": ["black bean", "pinto bean", "navy bean"],
+        "rice": ["brown rice", "white rice", "cauliflower rice"],
+        "sausage": ["ham", "bacon", "turkey sausage"]
+      },
+      "cuisine": "American",
+      "meal_style": "Rice Dishes",
+      "meal_type": "Dinner",
+      "protein": "Beans",
+      "skill_level": "Intermediate",
+      "time_minutes": 60,
+      "quick_meal": false,
+      "high_protein": true,
+      "comfort_food": true,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": false,
+      "ingredient_access": ["Everyday Grocery"],
+      "equipment": ["pot"],
+      "questions": [
+        "Do you want sausage in it?",
+        "Do you have bell pepper?"
+      ],
+      "shopping_tips": [
+        "Smoked sausage is a great addition."
+      ],
+      "chef_upgrade": [
+        "Cook the onion until fully soft.",
+        "Mash some beans for a creamier texture."
+      ],
+      "advanced_shortcuts": [
+        "Use canned beans."
+      ],
+      "advanced_homemade": [
+        "Build a deeper base with onion, pepper, garlic, and sausage."
+      ],
+      "instructions": [
+        "Cook onion and optional pepper or garlic.",
+        "Add beans and seasonings.",
+        "Simmer until flavorful.",
+        "Serve over rice."
+      ]
+    },
+    {
+      "id": "potato_leek_soup",
+      "name": "Potato Leek Soup",
+      "required": ["potato", "leek", "broth"],
+      "optional": ["butter", "cream", "parsley", "sour cream"],
+      "alternatives": {
+        "potato": ["cauliflower", "parsnip", "sweet potato"],
+        "leek": ["onion", "shallot"],
+        "cream": ["milk", "half and half", "sour cream"]
+      },
+      "cuisine": "French",
+      "meal_style": "Soups & Stews",
+      "meal_type": "Lunch",
+      "protein": "None",
+      "skill_level": "Intermediate",
+      "time_minutes": 45,
+      "quick_meal": false,
+      "high_protein": false,
+      "comfort_food": true,
+      "protein_packed": false,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery", "Farmers Market / Butcher / Fishmonger"],
+      "equipment": ["pot", "blender"],
+      "questions": [
+        "Do you want it chunky or blended?",
+        "Do you have cream or sour cream?"
+      ],
+      "shopping_tips": [
+        "Leeks are the key flavor."
+      ],
+      "chef_upgrade": [
+        "Blend until silky.",
+        "Finish with cream or herbs."
+      ],
+      "advanced_shortcuts": [
+        "Use an immersion blender."
+      ],
+      "advanced_homemade": [
+        "Top with crispy leeks or herb oil."
+      ],
+      "instructions": [
+        "Cook leeks in butter if using.",
+        "Add potatoes and broth.",
+        "Simmer until tender.",
+        "Blend if desired and finish with cream."
+      ]
+    },
+    {
+      "id": "broccoli_cheddar_soup",
+      "name": "Broccoli Cheddar Soup",
+      "required": ["broccoli", "cheddar", "broth"],
+      "optional": ["carrot", "onion", "milk", "cream", "butter"],
+      "alternatives": {
+        "broccoli": ["cauliflower", "spinach"],
+        "cheddar": ["colby jack", "american cheese", "monterey jack"],
+        "broth": ["stock", "water plus bouillon"]
+      },
+      "cuisine": "American",
+      "meal_style": "Soups & Stews",
+      "meal_type": "Lunch",
+      "protein": "Cheese",
+      "skill_level": "Intermediate",
+      "time_minutes": 35,
+      "quick_meal": false,
+      "high_protein": false,
+      "comfort_food": true,
+      "protein_packed": false,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": false,
+      "ingredient_access": ["Everyday Grocery"],
+      "equipment": ["pot"],
+      "questions": [
+        "Do you have milk or cream?",
+        "Do you want carrot or onion in it?"
+      ],
+      "shopping_tips": [
+        "Sharp cheddar gives stronger flavor."
+      ],
+      "chef_upgrade": [
+        "Cook onion first for sweeter flavor.",
+        "Add cheese off the heat."
+      ],
+      "advanced_shortcuts": [
+        "Use pre-cut broccoli."
+      ],
+      "advanced_homemade": [
+        "Make a quick roux with butter and flour before adding liquid."
+      ],
+      "instructions": [
+        "Cook onion and carrot if using.",
+        "Add broccoli and broth.",
+        "Simmer until tender.",
+        "Stir in cheddar and optional milk or cream."
+      ]
+    },
+    {
+      "id": "deli_pinwheels",
+      "name": "Deli Pinwheels",
+      "required": ["flour tortilla", "cream cheese", "deli turkey"],
+      "optional": ["deli ham", "salami", "lettuce", "pickle"],
+      "alternatives": {
+        "flour tortilla": ["corn tortilla", "lettuce wrap"],
+        "cream cheese": ["goat cheese", "whipped cream cheese", "ricotta"],
+        "deli turkey": ["deli ham", "salami", "roast beef"]
+      },
+      "cuisine": "American",
+      "meal_style": "Hors d'oeuvres",
+      "meal_type": "Snack",
+      "protein": "Turkey",
+      "skill_level": "Beginner",
+      "time_minutes": 10,
+      "quick_meal": true,
+      "high_protein": true,
+      "comfort_food": false,
+      "protein_packed": true,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery"],
+      "equipment": [],
+      "questions": [
+        "Do you want more than one deli meat?",
+        "Do you want crunch from lettuce or pickle?"
+      ],
+      "shopping_tips": [
+        "Cream cheese helps everything hold together."
+      ],
+      "chef_upgrade": [
+        "Season the cream cheese.",
+        "Chill before slicing."
+      ],
+      "advanced_shortcuts": [
+        "Use whipped cream cheese spread."
+      ],
+      "advanced_homemade": [
+        "Mix cream cheese with herbs, mustard, or garlic powder."
+      ],
+      "instructions": [
+        "Spread cream cheese on the tortilla.",
+        "Add deli meat and optional fillings.",
+        "Roll tightly.",
+        "Slice into pinwheels."
+      ]
+    },
+    {
+      "id": "berry_banana_smoothie",
+      "name": "Berry Banana Smoothie",
+      "required": ["banana", "berry", "milk"],
+      "optional": ["yogurt", "honey", "peanut butter", "spinach", "whipped cream"],
+      "alternatives": {
+        "banana": ["mango", "pineapple"],
+        "berry": ["strawberry", "blueberry", "frozen berry"],
+        "milk": ["almond milk", "oat milk", "yogurt"]
+      },
+      "cuisine": "American",
+      "meal_style": "Smoothies & Shakes",
+      "meal_type": "Drink",
+      "protein": "Milk",
+      "skill_level": "Beginner",
+      "time_minutes": 5,
+      "quick_meal": true,
+      "high_protein": false,
+      "comfort_food": false,
+      "protein_packed": false,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery"],
+      "equipment": ["blender"],
+      "questions": [
+        "Do you want yogurt or peanut butter in it?",
+        "Do you want spinach blended in?"
+      ],
+      "shopping_tips": [
+        "Frozen berries make it thicker."
+      ],
+      "chef_upgrade": [
+        "Freeze the banana first.",
+        "Balance sweetness with yogurt or honey."
+      ],
+      "advanced_shortcuts": [
+        "Use a frozen fruit mix."
+      ],
+      "advanced_homemade": [
+        "Add yogurt and a spoon of peanut butter for more body."
+      ],
+      "instructions": [
+        "Add ingredients to a blender.",
+        "Blend until smooth.",
+        "Adjust sweetness if needed."
+      ]
+    },
+    {
+      "id": "pineapple_mango_smoothie",
+      "name": "Pineapple Mango Smoothie",
+      "required": ["pineapple", "mango", "milk"],
+      "optional": ["yogurt", "honey", "coconut", "lime"],
+      "alternatives": {
+        "pineapple": ["orange", "papaya"],
+        "mango": ["banana", "peach"],
+        "milk": ["coconut milk", "almond milk", "yogurt"]
+      },
+      "cuisine": "Hawaiian",
+      "meal_style": "Smoothies & Shakes",
+      "meal_type": "Drink",
+      "protein": "Milk",
+      "skill_level": "Beginner",
+      "time_minutes": 5,
+      "quick_meal": true,
+      "high_protein": false,
+      "comfort_food": false,
+      "protein_packed": false,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery", "Better Grocery / Specialty Section"],
+      "equipment": ["blender"],
+      "questions": [
+        "Do you want coconut or lime in it?",
+        "Do you have yogurt?"
+      ],
+      "shopping_tips": [
+        "Frozen mango is especially useful."
+      ],
+      "chef_upgrade": [
+        "Use frozen fruit for a thicker texture.",
+        "Finish with lime for brightness."
+      ],
+      "advanced_shortcuts": [
+        "Use a frozen tropical fruit blend."
+      ],
+      "advanced_homemade": [
+        "Blend with yogurt and a little coconut for a creamier finish."
+      ],
+      "instructions": [
+        "Blend fruit with milk and any optional add-ins until smooth."
+      ]
+    },
+    {
+      "id": "fruit_and_cream_parfait",
+      "name": "Fruit and Cream Parfait",
+      "required": ["yogurt", "berry"],
+      "optional": ["oat", "honey", "whipped cream", "raisin", "almond"],
+      "alternatives": {
+        "yogurt": ["greek yogurt", "whipped cream", "cottage cheese"],
+        "berry": ["banana", "mango", "pineapple"],
+        "oat": ["granola", "cracker crumble", "almond"]
+      },
+      "cuisine": "American",
+      "meal_style": "Dessert",
+      "meal_type": "Dessert",
+      "protein": "Yogurt",
+      "skill_level": "Beginner",
+      "time_minutes": 10,
+      "quick_meal": true,
+      "high_protein": false,
+      "comfort_food": false,
+      "protein_packed": false,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": true,
+      "ingredient_access": ["Everyday Grocery"],
+      "equipment": [],
+      "questions": [
+        "Do you want nuts or oats for crunch?",
+        "Do you want it sweeter with honey?"
+      ],
+      "shopping_tips": [
+        "Greek yogurt makes it more filling."
+      ],
+      "chef_upgrade": [
+        "Layer carefully for cleaner presentation.",
+        "Finish with toasted nuts."
+      ],
+      "advanced_shortcuts": [
+        "Use store granola or trail mix."
+      ],
+      "advanced_homemade": [
+        "Toast almonds lightly before topping."
+      ],
+      "instructions": [
+        "Layer yogurt and berries.",
+        "Add optional honey, oats, nuts, raisins, or whipped cream.",
+        "Serve chilled."
+      ]
+    },
+    {
+      "id": "spinach_artichoke_dip",
+      "name": "Spinach Artichoke Dip",
+      "required": ["spinach", "artichoke", "cream cheese"],
+      "optional": ["sour cream", "parmesan", "mozzarella", "garlic"],
+      "alternatives": {
+        "spinach": ["kale", "greens"],
+        "artichoke": ["mushroom", "broccoli"],
+        "cream cheese": ["ricotta", "goat cheese", "sour cream"]
+      },
+      "cuisine": "American",
+      "meal_style": "Snack / Appetizer",
+      "meal_type": "Snack",
+      "protein": "Cheese",
+      "skill_level": "Intermediate",
+      "time_minutes": 30,
+      "quick_meal": true,
+      "high_protein": false,
+      "comfort_food": true,
+      "protein_packed": false,
+      "low_carb": true,
+      "keto": true,
+      "glp1_friendly": false,
+      "ingredient_access": ["Everyday Grocery", "Better Grocery / Specialty Section"],
+      "equipment": ["baking dish"],
+      "questions": [
+        "Do you want sour cream in it?",
+        "Do you have a second cheese?"
+      ],
+      "shopping_tips": [
+        "Frozen spinach works perfectly here."
+      ],
+      "chef_upgrade": [
+        "Drain the spinach well.",
+        "Broil at the end for color."
+      ],
+      "advanced_shortcuts": [
+        "Use frozen spinach and canned artichokes."
+      ],
+      "advanced_homemade": [
+        "Mix multiple cheeses for a richer dip."
+      ],
+      "instructions": [
+        "Mix cream cheese with spinach and artichoke.",
+        "Add optional cheeses and seasonings.",
+        "Bake until hot and bubbly."
+      ]
+    },
+    {
+      "id": "charcuterie_style_board",
+      "name": "Charcuterie Style Snack Board",
+      "required": ["cracker", "cheese"],
+      "optional": ["salami", "prosciutto", "olive", "jam", "pickle", "almond"],
+      "alternatives": {
+        "cracker": ["bread", "french bread", "pita"],
+        "cheese": ["brie", "cheddar", "havarti", "goat cheese"],
+        "salami": ["prosciutto", "pepperoni", "ham"]
+      },
+      "cuisine": "Mediterranean",
+      "meal_style": "Hors d'oeuvres",
+      "meal_type": "Snack",
+      "protein": "Cheese",
+      "skill_level": "Beginner",
+      "time_minutes": 10,
+      "quick_meal": true,
+      "high_protein": false,
+      "comfort_food": false,
+      "protein_packed": false,
+      "low_carb": false,
+      "keto": false,
+      "glp1_friendly": false,
+      "ingredient_access": ["Everyday Grocery", "Better Grocery / Specialty Section"],
+      "equipment": [],
+      "questions": [
+        "Do you want meats, olives, or jam on the board?"
+      ],
+      "shopping_tips": [
+        "A creamy cheese plus a sharper cheese is a good mix."
+      ],
+      "chef_upgrade": [
+        "Mix salty, creamy, crunchy, and sweet items.",
+        "Slice cheese in different sizes for texture."
+      ],
+      "advanced_shortcuts": [
+        "Use store-marinated olives or pre-sliced meats."
+      ],
+      "advanced_homemade": [
+        "Toast nuts lightly and add a little honey or jam."
+      ],
+      "instructions": [
+        "Arrange crackers and cheese.",
+        "Add optional meats, olives, jam, nuts, or pickles.",
+        "Serve as a snack board."
       ]
     }
   ]
