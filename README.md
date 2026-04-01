@@ -24,7 +24,18 @@
    ```bash
    python cook.py
    ## Run as a web app
+## How to run locally (beginner friendly)
 
+1. Click the green Code button on this repository  
+2. Click Download ZIP  
+3. Unzip the folder on your computer  
+4. Make sure Python is installed (https://python.org)  
+5. Open Terminal or Command Prompt in the folder  
+
+Run:
+
+```bash
+python cook.py
 1. Install Streamlit:
    ```bash
    pip install streamlit
