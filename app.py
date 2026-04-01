@@ -9,7 +9,7 @@ with open("recipes.json", "r", encoding="utf-8") as file:
     recipes = json.load(file)
 
 st.title("🍽️ What Can I Cook?")
-st.write("Enter the ingredients you have, separated by commas, and get meal ideas plus a shopping list.")
+st.write("Turn the ingredients you already have into meal ideas, match scores, and a smart shopping list.")
 
 user_input = st.text_input(
     "Ingredients",
@@ -56,4 +56,3 @@ if st.button("Find Meals"):
                     st.write(f"- {item}")
         else:
             st.warning("No matches found. Try entering more ingredients.")
-            Upgrade web app with button, match percentages, and improved shopping list
