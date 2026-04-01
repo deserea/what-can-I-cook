@@ -5,7 +5,12 @@ import streamlit as st
 st.set_page_config(page_title="What Can I Cook?", page_icon="🍽️", layout="wide")
 
 with open("recipes.json", "r", encoding="utf-8") as file:
-    recipes = json.load(file)
+    loaded_data = json.load(file)
+
+if isinstance(loaded_data, dict) and "recipes" in loaded_data:
+    recipes = loaded_data["recipes"]
+else:
+    recipes = loaded_data
 
 ALIASES = {
     "tomatoes": "tomato",
@@ -14,9 +19,9 @@ ALIASES = {
     "tomato sauces": "tomato sauce",
 
     "onions": "onion",
-    "red onions": "red onion",
     "yellow onions": "onion",
     "white onions": "onion",
+    "red onions": "red onion",
     "green onions": "green onion",
     "scallions": "green onion",
 
@@ -53,9 +58,13 @@ ALIASES = {
     "sweet potatoes": "sweet potato",
 
     "eggs": "egg",
+
     "tortillas": "tortilla",
-    "corn tortillas": "tortilla",
-    "flour tortillas": "tortilla",
+    "corn tortillas": "corn tortilla",
+    "flour tortillas": "flour tortilla",
+    "lettuce wraps": "lettuce wrap",
+    "romaine leaves": "lettuce wrap",
+    "butter lettuce": "lettuce wrap",
 
     "limes": "lime",
     "lemons": "lemon",
@@ -96,6 +105,15 @@ ALIASES = {
     "cheddar cheese": "cheddar",
     "parmesan cheese": "parmesan",
     "feta cheese": "feta",
+    "jack cheese": "monterey jack",
+    "monterey jack cheese": "monterey jack",
+    "pepper jack cheese": "pepper jack",
+    "cotija cheese": "cotija",
+    "queso fresco cheese": "queso fresco",
+    "shredded cheese": "cheese",
+    "mexican blend cheese": "cheese",
+    "italian blend cheese": "cheese",
+    "cheese blend": "cheese",
 
     "vegetable oil": "oil",
     "avocado oil": "oil",
@@ -138,21 +156,66 @@ ALIASES = {
 }
 
 INGREDIENT_GROUPS = {
-    "Pantry Staples": ["olive oil", "butter", "broth", "soy sauce", "vinegar", "salt", "pepper"],
+    "Pantry Staples": [
+        "olive oil", "oil", "butter", "broth", "soy sauce", "vinegar",
+        "salt", "pepper", "black pepper"
+    ],
     "Seasonings": [
         "garlic powder", "onion powder", "paprika", "smoked paprika",
         "cumin", "oregano", "basil", "thyme", "rosemary",
-        "red pepper flakes", "chili flakes", "cayenne", "cinnamon", "black pepper"
+        "red pepper flakes", "chili flakes", "cayenne", "cinnamon"
     ],
-    "Grains & Starches": ["pasta", "rice", "quinoa", "oat", "tortilla", "bread", "potato", "sweet potato", "orzo"],
-    "Dairy & Eggs": ["milk", "cheddar", "mozzarella", "parmesan", "yogurt", "egg", "feta", "cream", "sour cream"],
+    "Grains & Starches": [
+        "pasta", "rice", "quinoa", "oat", "corn tortilla", "flour tortilla",
+        "lettuce wrap", "bread", "potato", "sweet potato", "orzo"
+    ],
+    "Dairy & Eggs": [
+        "milk", "cheddar", "mozzarella", "parmesan", "yogurt", "egg", "feta",
+        "cream", "sour cream", "monterey jack", "pepper jack", "cotija",
+        "queso fresco", "cheese"
+    ],
     "Vegetables": [
         "bell pepper", "carrot", "celery", "spinach", "mushroom", "zucchini",
-        "cucumber", "broccoli", "avocado", "lettuce", "corn", "cabbage", "romaine", "onion", "red onion"
+        "cucumber", "broccoli", "avocado", "lettuce", "corn", "cabbage",
+        "romaine", "onion", "red onion"
     ],
-    "Beans & Canned Goods": ["black bean", "white bean", "kidney bean", "chickpea", "lentil", "tomato sauce", "tuna"],
-    "Fruit & Brighteners": ["lemon", "lime", "apple", "banana", "blueberry", "strawberry", "berry"],
-    "Fresh Extras": ["cilantro", "parsley", "basil", "dill", "ginger", "green onion", "pickle", "olive"]
+    "Beans & Canned Goods": [
+        "black bean", "white bean", "kidney bean", "chickpea", "lentil",
+        "tomato sauce", "tuna"
+    ],
+    "Fruit & Brighteners": [
+        "lemon", "lime", "apple", "banana", "blueberry", "strawberry", "berry"
+    ],
+    "Fresh Extras": [
+        "cilantro", "parsley", "basil", "dill", "ginger", "green onion",
+        "pickle", "olive"
+    ]
+}
+
+CHEESE_OPTIONS = {
+    "cheese",
+    "cheddar",
+    "mozzarella",
+    "parmesan",
+    "feta",
+    "monterey jack",
+    "pepper jack",
+    "cotija",
+    "queso fresco"
+}
+
+MELTING_CHEESE_OPTIONS = {
+    "cheese",
+    "cheddar",
+    "mozzarella",
+    "monterey jack",
+    "pepper jack"
+}
+
+MEXICAN_WRAP_OPTIONS = {
+    "corn tortilla",
+    "flour tortilla",
+    "lettuce wrap"
 }
 
 def singularize(word):
@@ -166,20 +229,94 @@ def singularize(word):
     return word
 
 def normalize_ingredient(text):
-    text = text.strip().lower()
-    text = re.sub(r"[^a-zA-Z0-9\\s-]", "", text)
-    text = re.sub(r"\\s+", " ", text).strip()
+    text = str(text).strip().lower()
+    text = re.sub(r"[^a-zA-Z0-9\s-]", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+
     if text in ALIASES:
         return ALIASES[text]
+
     text = singularize(text)
+
     if text in ALIASES:
         return ALIASES[text]
+
     return text
 
 def ingredient_matches(user_item, recipe_item):
     user_item = normalize_ingredient(user_item)
     recipe_item = normalize_ingredient(recipe_item)
-    return user_item == recipe_item or user_item in recipe_item or recipe_item in user_item
+
+    if user_item == recipe_item:
+        return True
+
+    if recipe_item == "wrap" and user_item in MEXICAN_WRAP_OPTIONS:
+        return True
+
+    if recipe_item == "cheese" and user_item in CHEESE_OPTIONS:
+        return True
+
+    if recipe_item == "melting cheese" and user_item in MELTING_CHEESE_OPTIONS:
+        return True
+
+    if user_item in recipe_item or recipe_item in user_item:
+        return True
+
+    return False
+
+def get_entry_label(entry):
+    if isinstance(entry, str):
+        return normalize_ingredient(entry)
+
+    if isinstance(entry, dict):
+        return entry.get("name", "ingredient")
+
+    return str(entry)
+
+def entry_matches_user_ingredients(entry, user_ingredients):
+    if isinstance(entry, str):
+        normalized_entry = normalize_ingredient(entry)
+        return any(ingredient_matches(user_item, normalized_entry) for user_item in user_ingredients)
+
+    if isinstance(entry, dict):
+        options = entry.get("options", [])
+        return any(
+            any(ingredient_matches(user_item, option) for user_item in user_ingredients)
+            for option in options
+        )
+
+    return False
+
+def get_best_matched_option(entry, user_ingredients):
+    if isinstance(entry, str):
+        normalized_entry = normalize_ingredient(entry)
+        for user_item in user_ingredients:
+            if ingredient_matches(user_item, normalized_entry):
+                return normalized_entry
+        return normalized_entry
+
+    if isinstance(entry, dict):
+        options = entry.get("options", [])
+        for option in options:
+            for user_item in user_ingredients:
+                if ingredient_matches(user_item, option):
+                    return normalize_ingredient(option)
+        return entry.get("name", "ingredient")
+
+    return str(entry)
+
+def get_missing_label(entry):
+    if isinstance(entry, str):
+        return normalize_ingredient(entry)
+
+    if isinstance(entry, dict):
+        name = entry.get("name", "ingredient")
+        options = entry.get("options", [])
+        if options:
+            return f"{name} ({', '.join(options)})"
+        return name
+
+    return str(entry)
 
 def recipe_matches_filters(recipe, selected_cuisine, selected_meal_type, vegetarian_only, quick_only, high_protein_only):
     if selected_cuisine != "All" and recipe["cuisine"] != selected_cuisine:
@@ -195,26 +332,25 @@ def recipe_matches_filters(recipe, selected_cuisine, selected_meal_type, vegetar
     return True
 
 def score_recipe(user_ingredients, required_ingredients, optional_ingredients):
-    normalized_required = [normalize_ingredient(item) for item in required_ingredients]
-    normalized_optional = [normalize_ingredient(item) for item in optional_ingredients]
-
     matched_required = []
     missing_required = []
-    for item in normalized_required:
-        if any(ingredient_matches(user_item, item) for user_item in user_ingredients):
-            matched_required.append(item)
+
+    for entry in required_ingredients:
+        if entry_matches_user_ingredients(entry, user_ingredients):
+            matched_required.append(get_best_matched_option(entry, user_ingredients))
         else:
-            missing_required.append(item)
+            missing_required.append(get_missing_label(entry))
 
     matched_optional = []
     missing_optional = []
-    for item in normalized_optional:
-        if any(ingredient_matches(user_item, item) for user_item in user_ingredients):
-            matched_optional.append(item)
-        else:
-            missing_optional.append(item)
 
-    required_total = len(normalized_required)
+    for entry in optional_ingredients:
+        if entry_matches_user_ingredients(entry, user_ingredients):
+            matched_optional.append(get_best_matched_option(entry, user_ingredients))
+        else:
+            missing_optional.append(get_missing_label(entry))
+
+    required_total = len(required_ingredients)
     required_match_count = len(matched_required)
     required_match_percent = round((required_match_count / required_total) * 100) if required_total else 0
 
@@ -233,29 +369,59 @@ def categorize_suggested_items(items):
     uncategorized = []
 
     for item in sorted(items):
+        normalized_item = normalize_ingredient(item)
         placed = False
+
         for group, group_items in INGREDIENT_GROUPS.items():
-            if item in group_items:
-                categorized[group].append(item)
+            if normalized_item in group_items:
+                categorized[group].append(normalized_item)
                 placed = True
                 break
+
         if not placed:
-            uncategorized.append(item)
+            uncategorized.append(normalized_item)
 
     if uncategorized:
-        categorized["Other"] = uncategorized
+        categorized["Other"] = sorted(list(set(uncategorized)))
+
+    for group in list(categorized.keys()):
+        categorized[group] = sorted(list(set(categorized[group])))
+
     return categorized
+
+def flatten_recipe_items_for_suggestions(items):
+    flattened = []
+
+    for entry in items:
+        if isinstance(entry, str):
+            flattened.append(normalize_ingredient(entry))
+        elif isinstance(entry, dict):
+            name = entry.get("name", "")
+            options = entry.get("options", [])
+
+            if name == "wrap":
+                flattened.extend(["corn tortilla", "flour tortilla", "lettuce wrap"])
+            elif name == "cheese":
+                flattened.extend(["cheddar", "monterey jack", "cotija", "queso fresco", "mozzarella", "feta"])
+            elif name == "melting cheese":
+                flattened.extend(["cheddar", "monterey jack", "mozzarella", "pepper jack"])
+            else:
+                flattened.extend([normalize_ingredient(opt) for opt in options])
+
+    return flattened
 
 def get_suggested_add_ons(base_ingredients, filtered_recipes, limit=20):
     suggestion_scores = {}
 
     for recipe in filtered_recipes:
         result = score_recipe(base_ingredients, recipe["required"], recipe.get("optional", []))
+
         if result["required_match_count"] > 0 and result["required_match_percent"] < 100:
             for item in result["missing_required"]:
                 suggestion_scores[item] = suggestion_scores.get(item, 0) + 3
-            for item in recipe.get("optional", []):
-                item = normalize_ingredient(item)
+
+            optional_items = flatten_recipe_items_for_suggestions(recipe.get("optional", []))
+            for item in optional_items:
                 if item not in base_ingredients:
                     suggestion_scores[item] = suggestion_scores.get(item, 0) + 1
 
@@ -264,8 +430,10 @@ def get_suggested_add_ons(base_ingredients, filtered_recipes, limit=20):
 
 def build_matches(user_ingredients, filtered_recipes):
     matches = []
+
     for recipe in filtered_recipes:
         result = score_recipe(user_ingredients, recipe["required"], recipe.get("optional", []))
+
         if result["required_match_count"] > 0:
             matches.append({
                 "name": recipe["name"],
@@ -284,7 +452,16 @@ def build_matches(user_ingredients, filtered_recipes):
                 "high_protein": recipe["high_protein"],
                 "instructions": recipe.get("instructions", [])
             })
-    matches.sort(key=lambda x: (x["required_match_percent"], x["required_match_count"], len(x["matched_optional"])), reverse=True)
+
+    matches.sort(
+        key=lambda x: (
+            x["required_match_percent"],
+            x["required_match_count"],
+            len(x["matched_optional"])
+        ),
+        reverse=True
+    )
+
     return matches
 
 def split_results(base_matches, expanded_matches):
@@ -306,10 +483,16 @@ def split_results(base_matches, expanded_matches):
         else:
             still_needs_shopping.append(match)
 
+    sort_key = lambda x: (
+        x["required_match_percent"],
+        x["required_match_count"],
+        len(x["matched_optional"])
+    )
+
     return (
-        sorted(can_make_now, key=lambda x: (x["required_match_percent"], x["required_match_count"], len(x["matched_optional"])), reverse=True),
-        sorted(can_make_with_addons, key=lambda x: (x["required_match_percent"], x["required_match_count"], len(x["matched_optional"])), reverse=True),
-        sorted(still_needs_shopping, key=lambda x: (x["required_match_percent"], x["required_match_count"], len(x["matched_optional"])), reverse=True)
+        sorted(can_make_now, key=sort_key, reverse=True),
+        sorted(can_make_with_addons, key=sort_key, reverse=True),
+        sorted(still_needs_shopping, key=sort_key, reverse=True)
     )
 
 def tags_for_match(match):
@@ -326,19 +509,23 @@ def display_recipe_card(match):
     st.markdown(f"### {match['name']}")
     st.write(f"**Tags:** {', '.join(tags_for_match(match))}")
     st.write(f"**Protein:** {match['protein']}")
-    st.write(f"**Required Match:** {match['required_match_count']}/{match['required_total']} ingredients ({match['required_match_percent']}%)")
+    st.write(
+        f"**Required Match:** {match['required_match_count']}/{match['required_total']} "
+        f"ingredients ({match['required_match_percent']}%)"
+    )
     st.write(f"**You have:** {', '.join(match['matched_required']) if match['matched_required'] else 'None'}")
     st.write(f"**Still need:** {', '.join(match['missing_required']) if match['missing_required'] else 'Nothing'}")
 
     if match["matched_optional"]:
         st.write(f"**Flavor boosters you have:** {', '.join(match['matched_optional'])}")
+
     if match["missing_optional"]:
         st.write(f"**Would be even better with:** {', '.join(match['missing_optional'])}")
 
     st.divider()
 
-st.title("🍽️ What Can I Cook? v6")
-st.write("Start with what you definitely have, then let the app uncover pantry extras, flavor boosters, and actual recipe steps.")
+st.title("🍽️ What Can I Cook? v7")
+st.write("Start with what you definitely have, then let the app uncover pantry extras, substitutions, and flexible recipe matches.")
 
 with st.sidebar:
     st.header("Filters")
@@ -366,7 +553,7 @@ filtered_recipes = [
 
 base_input = st.text_input(
     "Ingredients you definitely have",
-    placeholder="ground beef, tomatoes, onion, garlic"
+    placeholder="ground beef, tomato, onion, garlic, corn tortillas, monterey jack"
 )
 
 base_ingredients = []
