@@ -8,7 +8,13 @@
     "protein": "Chicken",
     "quick_meal": true,
     "vegetarian": false,
-    "high_protein": true
+    "high_protein": true,
+    "instructions": [
+      "Cook the chicken with onion and garlic until fully done.",
+      "Season with cumin and paprika if you have them.",
+      "Warm the tortillas.",
+      "Fill tortillas with chicken mixture and top with any extras like cheddar, avocado, cilantro, or lime."
+    ]
   },
   {
     "name": "Beef Tacos",
@@ -19,7 +25,13 @@
     "protein": "Beef",
     "quick_meal": true,
     "vegetarian": false,
-    "high_protein": true
+    "high_protein": true,
+    "instructions": [
+      "Brown the beef with onion and garlic.",
+      "Add cumin and paprika if available and cook for another minute.",
+      "Warm the tortillas.",
+      "Assemble tacos and finish with any toppings you have."
+    ]
   },
   {
     "name": "Chicken Quesadilla",
@@ -30,42 +42,14 @@
     "protein": "Chicken",
     "quick_meal": true,
     "vegetarian": false,
-    "high_protein": true
+    "high_protein": true,
+    "instructions": [
+      "Cook the chicken and any optional vegetables.",
+      "Place tortilla in a skillet and add cheddar plus the chicken mixture.",
+      "Fold and cook on both sides until golden and melty.",
+      "Serve with sour cream or avocado if you have them."
+    ]
   },
-  {
-    "name": "Bean and Cheese Quesadilla",
-    "required": ["black bean", "cheddar", "tortilla"],
-    "optional": ["onion", "cumin", "avocado", "lime"],
-    "cuisine": "Mexican",
-    "meal_type": "Lunch",
-    "protein": "Beans",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Chicken Fajitas",
-    "required": ["chicken", "bell pepper", "onion", "tortilla"],
-    "optional": ["lime", "cumin", "paprika", "avocado", "sour cream"],
-    "cuisine": "Mexican",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Beef Burrito Bowl",
-    "required": ["beef", "rice", "black bean"],
-    "optional": ["corn", "avocado", "lime", "cheddar", "cilantro"],
-    "cuisine": "Mexican",
-    "meal_type": "Dinner",
-    "protein": "Beef",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true
-  },
-
   {
     "name": "Pasta with Garlic and Olive Oil",
     "required": ["pasta", "garlic", "olive oil"],
@@ -75,7 +59,13 @@
     "protein": "None",
     "quick_meal": true,
     "vegetarian": true,
-    "high_protein": false
+    "high_protein": false,
+    "instructions": [
+      "Cook the pasta until al dente.",
+      "Gently sauté garlic in olive oil.",
+      "Toss the pasta with the garlic oil.",
+      "Finish with red pepper flakes, parmesan, lemon, or parsley if available."
+    ]
   },
   {
     "name": "Sausage Tomato Pasta",
@@ -86,7 +76,13 @@
     "protein": "Sausage",
     "quick_meal": false,
     "vegetarian": false,
-    "high_protein": true
+    "high_protein": true,
+    "instructions": [
+      "Cook the sausage and break it up in a pan.",
+      "Add onion and garlic and cook until softened.",
+      "Add tomato and simmer into a quick sauce.",
+      "Toss with cooked pasta and finish with parmesan or basil if you have them."
+    ]
   },
   {
     "name": "Mushroom Pasta",
@@ -97,31 +93,14 @@
     "protein": "None",
     "quick_meal": true,
     "vegetarian": true,
-    "high_protein": false
+    "high_protein": false,
+    "instructions": [
+      "Cook the pasta.",
+      "Sauté mushrooms and garlic in butter or oil until browned.",
+      "Toss with pasta.",
+      "Finish with parmesan and thyme if available."
+    ]
   },
-  {
-    "name": "Caprese Salad",
-    "required": ["tomato", "mozzarella"],
-    "optional": ["basil", "olive oil", "balsamic"],
-    "cuisine": "Italian",
-    "meal_type": "Lunch",
-    "protein": "Cheese",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Chicken Alfredo Style Pasta",
-    "required": ["chicken", "pasta", "parmesan", "butter"],
-    "optional": ["garlic", "black pepper", "parsley"],
-    "cuisine": "Italian",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true
-  },
-
   {
     "name": "Greek Salad",
     "required": ["cucumber", "tomato", "feta"],
@@ -131,53 +110,14 @@
     "protein": "Cheese",
     "quick_meal": true,
     "vegetarian": true,
-    "high_protein": false
+    "high_protein": false,
+    "instructions": [
+      "Chop cucumber and tomato.",
+      "Add feta and red onion if using.",
+      "Dress with olive oil and vinegar.",
+      "Top with olives if available."
+    ]
   },
-  {
-    "name": "Chickpea Salad",
-    "required": ["chickpea", "cucumber", "tomato"],
-    "optional": ["red onion", "olive oil", "lemon", "feta", "parsley"],
-    "cuisine": "Mediterranean",
-    "meal_type": "Lunch",
-    "protein": "Chickpeas",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Quinoa Veggie Bowl",
-    "required": ["quinoa", "chickpea"],
-    "optional": ["cucumber", "tomato", "olive oil", "lemon", "feta"],
-    "cuisine": "Mediterranean",
-    "meal_type": "Lunch",
-    "protein": "Chickpeas",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Hummus Plate",
-    "required": ["chickpea", "olive oil"],
-    "optional": ["lemon", "garlic", "cumin", "cucumber", "bread"],
-    "cuisine": "Middle Eastern",
-    "meal_type": "Lunch",
-    "protein": "Chickpeas",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Shakshuka Style Eggs",
-    "required": ["egg", "tomato", "onion"],
-    "optional": ["bell pepper", "garlic", "cumin", "paprika", "feta"],
-    "cuisine": "Middle Eastern",
-    "meal_type": "Breakfast",
-    "protein": "Egg",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": true
-  },
-
   {
     "name": "Chicken Curry",
     "required": ["chicken", "onion", "garlic"],
@@ -187,7 +127,13 @@
     "protein": "Chicken",
     "quick_meal": false,
     "vegetarian": false,
-    "high_protein": true
+    "high_protein": true,
+    "instructions": [
+      "Cook onion and garlic until soft.",
+      "Add chicken and brown lightly.",
+      "Add spices and tomato if you have them and simmer until the chicken is cooked through.",
+      "Serve over rice if available."
+    ]
   },
   {
     "name": "Chana Masala Style",
@@ -198,20 +144,14 @@
     "protein": "Chickpeas",
     "quick_meal": false,
     "vegetarian": true,
-    "high_protein": false
+    "high_protein": false,
+    "instructions": [
+      "Cook onion until softened.",
+      "Add tomato and spices if available.",
+      "Stir in chickpeas and simmer until flavorful.",
+      "Serve with rice if you have it."
+    ]
   },
-  {
-    "name": "Lentil Dal Style",
-    "required": ["lentil", "onion", "garlic"],
-    "optional": ["ginger", "turmeric", "cumin", "rice", "cilantro"],
-    "cuisine": "Indian",
-    "meal_type": "Dinner",
-    "protein": "Lentils",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false
-  },
-
   {
     "name": "Chicken Stir-Fry",
     "required": ["chicken", "bell pepper", "onion", "soy sauce"],
@@ -221,18 +161,13 @@
     "protein": "Chicken",
     "quick_meal": true,
     "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Beef Stir-Fry",
-    "required": ["beef", "bell pepper", "onion", "soy sauce"],
-    "optional": ["garlic", "ginger", "rice", "sesame oil"],
-    "cuisine": "Chinese",
-    "meal_type": "Dinner",
-    "protein": "Beef",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
+    "high_protein": true,
+    "instructions": [
+      "Cook the chicken in a hot pan.",
+      "Add onion and bell pepper and stir-fry until crisp tender.",
+      "Add soy sauce plus garlic or ginger if available.",
+      "Serve with rice or top with sesame oil if you have it."
+    ]
   },
   {
     "name": "Vegetable Fried Rice",
@@ -243,20 +178,14 @@
     "protein": "Egg",
     "quick_meal": true,
     "vegetarian": true,
-    "high_protein": false
+    "high_protein": false,
+    "instructions": [
+      "Scramble the egg in a hot pan and remove.",
+      "Cook vegetables in a little oil if using.",
+      "Add rice and soy sauce and stir-fry.",
+      "Return the egg to the pan and finish with green onion if available."
+    ]
   },
-  {
-    "name": "Chicken Fried Rice",
-    "required": ["chicken", "rice", "egg", "soy sauce"],
-    "optional": ["green onion", "carrot", "peas", "oil"],
-    "cuisine": "Chinese",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-
   {
     "name": "Thai Basil Chicken Style",
     "required": ["chicken", "garlic", "soy sauce"],
@@ -266,20 +195,14 @@
     "protein": "Chicken",
     "quick_meal": true,
     "vegetarian": false,
-    "high_protein": true
+    "high_protein": true,
+    "instructions": [
+      "Cook chicken with garlic in a hot pan.",
+      "Add soy sauce and chili flakes if you like heat.",
+      "Stir in basil and bell pepper if available.",
+      "Serve over rice."
+    ]
   },
-  {
-    "name": "Thai Coconut Veggie Curry Style",
-    "required": ["onion", "garlic", "broth"],
-    "optional": ["bell pepper", "carrot", "broccoli", "rice", "ginger", "lime"],
-    "cuisine": "Thai",
-    "meal_type": "Dinner",
-    "protein": "None",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false
-  },
-
   {
     "name": "Teriyaki Salmon Bowl Style",
     "required": ["salmon", "rice", "soy sauce"],
@@ -289,20 +212,14 @@
     "protein": "Salmon",
     "quick_meal": true,
     "vegetarian": false,
-    "high_protein": true
+    "high_protein": true,
+    "instructions": [
+      "Cook the salmon until just done.",
+      "Season or glaze lightly with soy sauce.",
+      "Serve over rice.",
+      "Top with cucumber, avocado, green onion, or sesame seeds if available."
+    ]
   },
-  {
-    "name": "Miso Soup Style",
-    "required": ["broth"],
-    "optional": ["green onion", "mushroom", "tofu", "seaweed"],
-    "cuisine": "Japanese",
-    "meal_type": "Lunch",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-
   {
     "name": "Bibimbap Style Bowl",
     "required": ["rice", "egg"],
@@ -312,20 +229,14 @@
     "protein": "Egg",
     "quick_meal": false,
     "vegetarian": true,
-    "high_protein": false
+    "high_protein": false,
+    "instructions": [
+      "Cook the rice and prepare the egg.",
+      "Cook any vegetables or beef you have separately.",
+      "Layer everything in a bowl over the rice.",
+      "Finish with soy sauce and green onion if available."
+    ]
   },
-  {
-    "name": "Korean Beef Bowl Style",
-    "required": ["beef", "rice", "soy sauce"],
-    "optional": ["garlic", "green onion", "sesame oil", "cucumber"],
-    "cuisine": "Korean",
-    "meal_type": "Dinner",
-    "protein": "Beef",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-
   {
     "name": "Chicken Adobo Style",
     "required": ["chicken", "soy sauce", "vinegar"],
@@ -335,20 +246,14 @@
     "protein": "Chicken",
     "quick_meal": false,
     "vegetarian": false,
-    "high_protein": true
+    "high_protein": true,
+    "instructions": [
+      "Combine chicken with soy sauce and vinegar in a pan.",
+      "Add garlic, black pepper, and bay leaf if you have them.",
+      "Simmer until the chicken is cooked and the sauce reduces.",
+      "Serve with rice."
+    ]
   },
-  {
-    "name": "Garlic Rice Style",
-    "required": ["rice", "garlic"],
-    "optional": ["oil", "egg", "green onion"],
-    "cuisine": "Filipino",
-    "meal_type": "Breakfast",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-
   {
     "name": "Chicken Shawarma Bowl Style",
     "required": ["chicken", "rice"],
@@ -358,20 +263,14 @@
     "protein": "Chicken",
     "quick_meal": false,
     "vegetarian": false,
-    "high_protein": true
+    "high_protein": true,
+    "instructions": [
+      "Cook chicken with garlic and warm spices if you have them.",
+      "Serve over rice.",
+      "Add cucumber and tomato for freshness.",
+      "Finish with yogurt sauce if available."
+    ]
   },
-  {
-    "name": "Falafel Bowl Style",
-    "required": ["chickpea", "garlic"],
-    "optional": ["cucumber", "tomato", "yogurt", "lemon", "parsley", "cumin"],
-    "cuisine": "Middle Eastern",
-    "meal_type": "Lunch",
-    "protein": "Chickpeas",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false
-  },
-
   {
     "name": "Paella Style Rice",
     "required": ["rice", "tomato", "onion"],
@@ -381,20 +280,14 @@
     "protein": "Mixed",
     "quick_meal": false,
     "vegetarian": false,
-    "high_protein": false
+    "high_protein": false,
+    "instructions": [
+      "Cook onion and tomato in a wide pan.",
+      "Add rice and stir with paprika if available.",
+      "Add protein and vegetables if using and cook until the rice is tender.",
+      "Finish with lemon."
+    ]
   },
-  {
-    "name": "Spanish Tortilla Style",
-    "required": ["egg", "potato", "onion"],
-    "optional": ["olive oil", "paprika"],
-    "cuisine": "Spanish",
-    "meal_type": "Breakfast",
-    "protein": "Egg",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": true
-  },
-
   {
     "name": "Caldo Verde Style",
     "required": ["potato", "broth", "greens"],
@@ -404,20 +297,14 @@
     "protein": "Sausage",
     "quick_meal": false,
     "vegetarian": false,
-    "high_protein": false
+    "high_protein": false,
+    "instructions": [
+      "Cook potato in broth until soft.",
+      "Mash or blend part of it for body.",
+      "Add greens and sausage if using.",
+      "Finish with garlic, onion, or olive oil if available."
+    ]
   },
-  {
-    "name": "Portuguese Garlic Shrimp Style",
-    "required": ["shrimp", "garlic", "olive oil"],
-    "optional": ["lemon", "paprika", "bread", "parsley"],
-    "cuisine": "Portuguese",
-    "meal_type": "Dinner",
-    "protein": "Shrimp",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-
   {
     "name": "Coq au Vin Style",
     "required": ["chicken", "onion", "mushroom"],
@@ -427,20 +314,14 @@
     "protein": "Chicken",
     "quick_meal": false,
     "vegetarian": false,
-    "high_protein": true
+    "high_protein": true,
+    "instructions": [
+      "Brown the chicken.",
+      "Cook onion and mushroom until softened.",
+      "Add garlic, carrot, and thyme if you have them and simmer together.",
+      "Finish with butter for richness if available."
+    ]
   },
-  {
-    "name": "French Omelet Style",
-    "required": ["egg", "butter"],
-    "optional": ["cheese", "herbs", "mushroom"],
-    "cuisine": "French",
-    "meal_type": "Breakfast",
-    "protein": "Egg",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": true
-  },
-
   {
     "name": "Jerk Chicken Style",
     "required": ["chicken", "garlic"],
@@ -450,20 +331,14 @@
     "protein": "Chicken",
     "quick_meal": false,
     "vegetarian": false,
-    "high_protein": true
+    "high_protein": true,
+    "instructions": [
+      "Season chicken with garlic and any spicy or herby extras you have.",
+      "Cook until browned and done.",
+      "Serve with rice and beans if available.",
+      "Finish with lime."
+    ]
   },
-  {
-    "name": "Rice and Peas Style",
-    "required": ["rice", "bean"],
-    "optional": ["garlic", "thyme", "green onion"],
-    "cuisine": "Caribbean",
-    "meal_type": "Side",
-    "protein": "Beans",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false
-  },
-
   {
     "name": "Tagine Style Chickpeas",
     "required": ["chickpea", "tomato", "onion"],
@@ -473,20 +348,14 @@
     "protein": "Chickpeas",
     "quick_meal": false,
     "vegetarian": true,
-    "high_protein": false
+    "high_protein": false,
+    "instructions": [
+      "Cook onion until softened.",
+      "Add tomato and spices if available.",
+      "Stir in chickpeas and carrot if using and simmer.",
+      "Finish with lemon."
+    ]
   },
-  {
-    "name": "Moroccan Chicken Style",
-    "required": ["chicken", "onion", "garlic"],
-    "optional": ["cinnamon", "cumin", "lemon", "olive", "carrot"],
-    "cuisine": "Moroccan",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true
-  },
-
   {
     "name": "Berbere Lentils Style",
     "required": ["lentil", "onion", "garlic"],
@@ -496,43 +365,14 @@
     "protein": "Lentils",
     "quick_meal": false,
     "vegetarian": true,
-    "high_protein": false
+    "high_protein": false,
+    "instructions": [
+      "Cook onion and garlic first.",
+      "Add lentils and enough liquid to simmer.",
+      "Add tomato, ginger, and paprika if available.",
+      "Cook until tender and serve with rice if desired."
+    ]
   },
-  {
-    "name": "Cabbage Potato Stew Style",
-    "required": ["cabbage", "potato", "onion"],
-    "optional": ["carrot", "garlic", "paprika"],
-    "cuisine": "Ethiopian",
-    "meal_type": "Dinner",
-    "protein": "None",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false
-  },
-
-  {
-    "name": "Smothered Chicken Style",
-    "required": ["chicken", "onion"],
-    "optional": ["garlic", "broth", "rice", "black pepper"],
-    "cuisine": "Southern",
-    "meal_type": "Dinner",
-    "protein": "Chicken",
-    "quick_meal": false,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Breakfast Potatoes",
-    "required": ["potato", "oil"],
-    "optional": ["onion", "paprika", "garlic powder", "egg"],
-    "cuisine": "Southern",
-    "meal_type": "Breakfast",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
-  },
-
   {
     "name": "Red Beans and Rice Style",
     "required": ["kidney bean", "rice", "onion"],
@@ -542,20 +382,14 @@
     "protein": "Beans",
     "quick_meal": false,
     "vegetarian": true,
-    "high_protein": false
+    "high_protein": false,
+    "instructions": [
+      "Cook onion first.",
+      "Add beans and seasoning ingredients if you have them.",
+      "Simmer until flavorful.",
+      "Serve over rice and add sausage if available."
+    ]
   },
-  {
-    "name": "Cajun Shrimp Rice Style",
-    "required": ["shrimp", "rice", "bell pepper"],
-    "optional": ["onion", "garlic", "paprika", "butter"],
-    "cuisine": "Cajun/Creole",
-    "meal_type": "Dinner",
-    "protein": "Shrimp",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-
   {
     "name": "Three Sisters Bowl Style",
     "required": ["corn", "bean", "squash"],
@@ -565,51 +399,12 @@
     "protein": "Beans",
     "quick_meal": false,
     "vegetarian": true,
-    "high_protein": false
-  },
-  {
-    "name": "Wild Rice Mushroom Bowl Style",
-    "required": ["rice", "mushroom"],
-    "optional": ["onion", "garlic", "thyme", "greens"],
-    "cuisine": "Indigenous",
-    "meal_type": "Lunch",
-    "protein": "None",
-    "quick_meal": false,
-    "vegetarian": true,
-    "high_protein": false
-  },
-
-  {
-    "name": "Chicken Sandwich",
-    "required": ["chicken", "bread"],
-    "optional": ["lettuce", "tomato", "mayonnaise", "cheese"],
-    "cuisine": "American",
-    "meal_type": "Lunch",
-    "protein": "Chicken",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Tuna Salad Sandwich",
-    "required": ["tuna", "bread", "mayonnaise"],
-    "optional": ["celery", "onion", "pickle", "lettuce"],
-    "cuisine": "American",
-    "meal_type": "Lunch",
-    "protein": "Tuna",
-    "quick_meal": true,
-    "vegetarian": false,
-    "high_protein": true
-  },
-  {
-    "name": "Smoothie",
-    "required": ["banana", "milk"],
-    "optional": ["strawberry", "blueberry", "yogurt", "honey"],
-    "cuisine": "American",
-    "meal_type": "Breakfast",
-    "protein": "None",
-    "quick_meal": true,
-    "vegetarian": true,
-    "high_protein": false
+    "high_protein": false,
+    "instructions": [
+      "Cook squash until tender.",
+      "Add corn and beans and warm through.",
+      "Add onion, sage, and broth if available for more flavor.",
+      "Serve as a hearty bowl."
+    ]
   }
 ]
