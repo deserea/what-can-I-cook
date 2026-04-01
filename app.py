@@ -56,3 +56,4 @@ if st.button("Find Meals"):
                     st.write(f"- {item}")
         else:
             st.warning("No matches found. Try entering more ingredients.")
+            Upgrade web app with button, match percentages, and improved shopping list
